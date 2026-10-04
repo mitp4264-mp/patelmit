@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mit Patel | Financial Services & Operations Professional</title>
+<meta name="description" content="Portfolio of Mit Patel: financial services, consultative sales and operations professional based in Regina, Saskatchewan.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#12202F; --ink-2:#3E4C5E; --ink-3:#6B7889;
+  --paper:#F6F7F9; --surface:#FFFFFF; --line:#DCE1E8;
+  --accent:#0F6B66; --accent-ink:#FFFFFF; --brass:#9A7B43;
+  --rail:#12202F; --rail-ink:#EAF0F6; --rail-dim:#9FB0C3;
+  --c-fin:#0F6B66; --c-tel:#3D5A9E; --c-mfg:#9A7B43; --c-ret:#7A5A86;
+  --serif:"Source Serif 4", Georgia, "Times New Roman", serif;
+  --sans:"IBM Plex Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --rail-w:320px;
+}
+:root:not([data-theme="light"]){}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --ink:#E8EEF5; --ink-2:#B7C3D1; --ink-3:#8795A7;
+    --paper:#0D151F; --surface:#142030; --line:#243448;
+    --accent:#4FB3AB; --accent-ink:#06201E; --brass:#C9A96A;
+    --rail:#09101A; --rail-ink:#EAF0F6; --rail-dim:#8FA2B8;
+    --c-fin:#4FB3AB; --c-tel:#7F9BDB; --c-mfg:#C9A96A; --c-ret:#B58FC4;
+  }
+}
+:root[data-theme="dark"]{
+  --ink:#E8EEF5; --ink-2:#B7C3D1; --ink-3:#8795A7;
+  --paper:#0D151F; --surface:#142030; --line:#243448;
+  --accent:#4FB3AB; --accent-ink:#06201E; --brass:#C9A96A;
+  --rail:#09101A; --rail-ink:#EAF0F6; --rail-dim:#8FA2B8;
+  --c-fin:#4FB3AB; --c-tel:#7F9BDB; --c-mfg:#C9A96A; --c-ret:#B58FC4;
+}
+
+*{box-sizing:border-box}
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 72px)}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:3px}
+h1,h2,h3{font-family:var(--serif);font-weight:600;margin:0;letter-spacing:-.01em;line-height:1.15}
+p{margin:0}
+
+.layout{display:grid;grid-template-columns:var(--rail-w) minmax(0,1fr);min-height:100vh}
+
+/* Rail */
+.rail{background:var(--rail);color:var(--rail-ink);position:sticky;top:0;align-self:start;height:100vh;padding:44px 34px 32px;display:flex;flex-direction:column;gap:28px;overflow-y:auto}
+.mono-mark{width:54px;height:54px;border:1.5px solid var(--brass);display:grid;place-items:center;font-family:var(--serif);font-size:22px;color:var(--brass);border-radius:50%}
+.rail h1{font-size:30px;color:var(--rail-ink)}
+.rail .role{color:var(--rail-dim);font-size:14.5px;margin-top:8px;line-height:1.5}
+.nav{display:flex;flex-direction:column;gap:2px;margin-top:4px}
+.nav a{text-decoration:none;color:var(--rail-dim);font-size:15px;padding:9px 0 9px 16px;border-left:2px solid rgba(255,255,255,.12);transition:color .15s,border-color .15s}
+.nav a:hover{color:var(--rail-ink)}
+.nav a.active{color:var(--rail-ink);border-left-color:var(--brass);font-weight:500}
+.rail-foot{margin-top:auto;display:flex;flex-direction:column;gap:10px;font-size:14px;color:var(--rail-dim)}
+.rail-foot a{text-decoration:none}
+.rail-foot a:hover{color:var(--rail-ink);text-decoration:underline}
+.theme-btn{background:none;border:1px solid rgba(255,255,255,.22);color:var(--rail-ink);border-radius:999px;padding:7px 14px;font:inherit;font-size:13.5px;cursor:pointer;align-self:flex-start}
+.theme-btn:hover{border-color:var(--brass)}
+
+/* Mobile bar */
+.topbar{display:none}
+
+main{padding:0 clamp(24px,5vw,72px)}
+section{padding:88px 0 24px;max-width:860px}
+section + section{border-top:1px solid var(--line);margin-top:56px}
+.sec-title{font-size:clamp(26px,3.2vw,34px);margin-bottom:10px}
+.sec-lead{color:var(--ink-2);max-width:62ch;margin-bottom:34px}
+
+/* Hero */
+#profile{padding-top:96px}
+.hero-h{font-size:clamp(34px,5.2vw,58px);max-width:15ch;line-height:1.08}
+.hero-p{margin-top:26px;font-size:18px;color:var(--ink-2);max-width:60ch;line-height:1.7;font-family:var(--serif)}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 22px;border-radius:6px;font:500 15px var(--sans);text-decoration:none;cursor:pointer;border:1px solid var(--line);background:var(--surface);color:var(--ink);transition:background .15s,border-color .15s}
+.btn:hover{border-color:var(--accent)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.btn.primary:hover{filter:brightness(1.08)}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:0;margin-top:52px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.fact{padding:20px 20px 20px 0}
+.fact + .fact{padding-left:20px;border-left:1px solid var(--line)}
+.fact b{display:block;font:600 30px var(--serif);color:var(--ink)}
+.fact span{font-size:14px;color:var(--ink-3)}
+
+/* Career bar */
+.bar-wrap{margin-bottom:26px}
+.bar{display:flex;gap:4px;height:64px}
+.seg{flex:var(--w) 1 0;min-width:44px;border:0;border-radius:4px;cursor:pointer;background:var(--c);opacity:.5;color:#fff;font:500 12.5px var(--sans);padding:0 8px;text-align:left;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;transition:opacity .2s, transform .2s}
+.seg:hover{opacity:.8}
+.seg[aria-selected="true"]{opacity:1;transform:translateY(-4px);box-shadow:0 8px 0 -4px var(--c)}
+.seg.gap{background:transparent;opacity:1;pointer-events:none;flex:var(--w) 1 0;min-width:10px}
+.years{display:flex;justify-content:space-between;font-size:13px;color:var(--ink-3);margin-top:10px}
+.legend{display:flex;flex-wrap:wrap;gap:8px 20px;margin-top:14px;font-size:13.5px;color:var(--ink-2)}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:2px;background:var(--c);margin-right:7px}
+
+.detail{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:30px clamp(20px,3vw,36px)}
+.detail .meta{display:flex;flex-wrap:wrap;gap:6px 16px;color:var(--ink-3);font-size:14px;margin-top:8px}
+.detail h3{font-size:24px}
+.detail .org{color:var(--ink-2);font-size:16px;margin-top:4px}
+.detail ul{margin:22px 0 0;padding-left:20px;display:grid;gap:12px;color:var(--ink-2)}
+.detail li::marker{color:var(--brass)}
+.tag{display:inline-block;padding:2px 10px;border-radius:999px;border:1px solid var(--c);color:var(--c);font-size:12.5px;font-weight:500}
+.detail.swap{animation:swap .28s ease}
+@keyframes swap{from{opacity:.4;transform:translateY(6px)}to{opacity:1;transform:none}}
+
+.stepper{display:flex;gap:10px;margin-top:18px}
+.stepper button{background:none;border:1px solid var(--line);color:var(--ink-2);border-radius:6px;padding:8px 14px;font:inherit;font-size:14px;cursor:pointer}
+.stepper button:hover:not(:disabled){border-color:var(--accent);color:var(--ink)}
+.stepper button:disabled{opacity:.4;cursor:default}
+
+/* Capabilities */
+.toggle{display:inline-flex;border:1px solid var(--line);border-radius:8px;padding:3px;background:var(--surface);margin-bottom:22px}
+.toggle button{border:0;background:none;padding:9px 18px;border-radius:6px;font:500 14.5px var(--sans);color:var(--ink-2);cursor:pointer}
+.toggle button[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink)}
+.skill-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px}
+.skill{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:14px 16px;text-align:left;cursor:pointer;font:inherit;color:var(--ink);transition:border-color .15s}
+.skill:hover,.skill[aria-expanded="true"]{border-color:var(--accent)}
+.skill strong{display:block;font-weight:600;font-size:15.5px}
+.skill small{display:block;color:var(--ink-2);font-size:14px;line-height:1.5;margin-top:0;max-height:0;overflow:hidden;opacity:0;transition:max-height .25s,opacity .25s,margin .25s}
+.skill[aria-expanded="true"] small{max-height:140px;opacity:1;margin-top:8px}
+.hint{font-size:13.5px;color:var(--ink-3);margin-top:16px}
+
+/* Credentials */
+.cred-cols{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.cred-cols h3{font-size:20px;margin-bottom:16px}
+.list{list-style:none;margin:0;padding:0;display:grid;gap:16px}
+.list li{padding-left:18px;border-left:2px solid var(--brass)}
+.list b{display:block;font-weight:600}
+.list span{color:var(--ink-3);font-size:14.5px}
+
+/* Contact */
+.contact-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:36px;align-items:start}
+.c-list{display:grid;gap:14px}
+.c-row{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:14px 0;border-bottom:1px solid var(--line)}
+.c-row small{display:block;color:var(--ink-3);font-size:13px}
+.c-row a{text-decoration:none;font-weight:500}
+.c-row a:hover{color:var(--accent);text-decoration:underline}
+.copy{background:none;border:1px solid var(--line);border-radius:6px;padding:6px 12px;font:inherit;font-size:13px;color:var(--ink-2);cursor:pointer}
+.copy:hover{border-color:var(--accent)}
+.composer{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:26px;display:grid;gap:16px}
+.composer h3{font-size:20px}
+.field label{display:block;font-size:14px;font-weight:500;margin-bottom:6px}
+.field input,.field select,.field textarea{width:100%;padding:11px 12px;border:1px solid var(--line);border-radius:6px;background:var(--paper);color:var(--ink);font:inherit;font-size:15px}
+.field textarea{min-height:120px;resize:vertical}
+.composer .note{font-size:13px;color:var(--ink-3)}
+
+/* Request dialogs */
+.linkbtn{background:none;border:0;padding:0;font:inherit;font-size:14px;color:var(--rail-dim);text-align:left;cursor:pointer;text-decoration:none}
+.linkbtn:hover{color:var(--rail-ink);text-decoration:underline}
+dialog{border:1px solid var(--line);border-radius:10px;background:var(--surface);color:var(--ink);padding:0;width:min(520px,calc(100vw - 32px));max-height:calc(100vh - 32px);overflow:auto;box-shadow:0 24px 60px rgba(8,16,28,.35)}
+dialog::backdrop{background:rgba(8,16,28,.6)}
+dialog[open]{animation:pop .22s ease}
+@keyframes pop{from{opacity:0;transform:translateY(10px) scale(.98)}to{opacity:1;transform:none}}
+.dlg{padding:28px clamp(20px,4vw,32px) 26px;display:grid;gap:16px}
+.dlg h3{font-size:24px}
+.dlg .sub{color:var(--ink-2);font-size:15px;margin-top:-6px}
+.dlg .close{position:absolute;top:12px;right:12px;background:none;border:0;color:var(--ink-3);font-size:24px;line-height:1;width:36px;height:36px;border-radius:6px;cursor:pointer}
+.dlg .close:hover{color:var(--ink);background:var(--paper)}
+.req{color:#B3261E;margin-left:2px}
+:root[data-theme="dark"] .req{color:#FF8A80}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .req{color:#FF8A80}}
+.field .err{display:none;color:#B3261E;font-size:13px;margin-top:5px}
+:root[data-theme="dark"] .field .err{color:#FF8A80}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .field .err{color:#FF8A80}}
+.field.invalid .err{display:block}
+.field.invalid input{border-color:#B3261E}
+.formerr{display:none;padding:10px 12px;border-radius:6px;border:1px solid #B3261E;font-size:14px}
+.formerr.show{display:block}
+.dlg .actions{display:flex;gap:10px;justify-content:flex-end;flex-wrap:wrap}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.success{text-align:center;justify-items:center;padding-top:36px}
+.tick{width:56px;height:56px;border-radius:50%;background:var(--accent);color:var(--accent-ink);display:grid;place-items:center;font-size:28px}
+footer{padding:56px 0 48px;color:var(--ink-3);font-size:14px;max-width:860px}
+
+.toast{position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom,0px));transform:translate(-50%,20px);background:var(--ink);color:var(--paper);padding:10px 18px;border-radius:6px;font-size:14px;opacity:0;pointer-events:none;transition:opacity .2s,transform .2s;z-index:50}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+
+/* Single load sequence */
+.intro > *{animation:rise .7s cubic-bezier(.2,.7,.2,1) both}
+.intro > *:nth-child(2){animation-delay:.08s}
+.intro > *:nth-child(3){animation-delay:.16s}
+.intro > *:nth-child(4){animation-delay:.24s}
+@keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+}
+
+/* Responsive */
+@media (max-width: 960px){
+  .layout{grid-template-columns:1fr}
+  .rail{display:none}
+  .topbar{display:flex;position:sticky;top:0;z-index:20;align-items:center;justify-content:space-between;gap:12px;background:var(--rail);color:var(--rail-ink);padding:calc(env(safe-area-inset-top,0px) + 10px) 16px 10px}
+  .topbar strong{font:600 18px var(--serif);white-space:nowrap}
+  .topbar nav{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none}
+  .topbar nav a{color:var(--rail-dim);text-decoration:none;font-size:14px;padding:6px 10px;border-radius:999px;white-space:nowrap}
+  .topbar nav a.active{color:var(--rail-ink);background:rgba(255,255,255,.12)}
+  .topbar .theme-mini{background:none;border:1px solid rgba(255,255,255,.25);color:var(--rail-ink);border-radius:999px;width:34px;height:34px;cursor:pointer;flex:none}
+  :root{padding-top:0}
+  section{padding-top:64px}
+  #profile{padding-top:48px}
+  .cred-cols,.contact-grid{grid-template-columns:1fr}
+  .fact + .fact{border-left:0;padding-left:0}
+  .fact{padding:16px 0;border-bottom:1px solid var(--line)}
+  .facts{border-bottom:0}
+  .seg{font-size:0;padding:0}
+  .seg[aria-selected="true"]{font-size:0}
+}
+</style>
+</head>
+<body>
+<div class="layout">
+
+  <aside class="rail" aria-label="Site navigation">
+    <div>
+      <div class="mono-mark" aria-hidden="true">MP</div>
+    </div>
+    <div>
+      <h1>Mit Patel</h1>
+      <p class="role">Financial services, sales and operations professional<br>Regina, Saskatchewan</p>
+    </div>
+    <nav class="nav" id="railNav">
+      <a href="#profile" class="active">Profile</a>
+      <a href="#experience">Experience</a>
+      <a href="#capabilities">Capabilities</a>
+      <a href="#credentials">Credentials</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="rail-foot">
+      <a href="mailto:connect@patelmit.com">connect@patelmit.com</a>
+      <button class="linkbtn" type="button" data-request="phone">Request phone number</button>
+      <button class="linkbtn" type="button" data-request="resume">Request résumé</button>
+      <button class="theme-btn" data-theme-toggle type="button">Switch theme</button>
+    </div>
+  </aside>
+
+  <div>
+    <header class="topbar">
+      <strong>Mit Patel</strong>
+      <nav id="topNav" aria-label="Sections">
+        <a href="#profile" class="active">Profile</a>
+        <a href="#experience">Experience</a>
+        <a href="#capabilities">Skills</a>
+        <a href="#credentials">Credentials</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="theme-mini" data-theme-toggle type="button" aria-label="Switch theme">◐</button>
+    </header>
+
+    <main>
+      <section id="profile">
+        <div class="intro">
+          <h2 class="hero-h">Helping clients make confident financial decisions.</h2>
+          <p class="hero-p">I'm a financial services, sales and operations professional with more than seven years across banking, contact centres, telecommunications, retail and manufacturing. I combine consultative selling and careful compliance with a habit of improving the processes around me.</p>
+          <div class="hero-cta">
+            <a class="btn primary" href="#contact">Get in touch</a>
+            <button class="btn" type="button" data-request="resume">Request résumé</button>
+            <a class="btn" href="#experience">View career path</a>
+          </div>
+          <div class="facts">
+            <div class="fact"><b>7+ years</b><span>Client-facing and operational roles</span></div>
+            <div class="fact"><b>4 sectors</b><span>Banking, telecom, retail, manufacturing</span></div>
+            <div class="fact"><b>Top performer</b><span>Sales and service at CIBC</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience">
+        <h2 class="sec-title">Experience</h2>
+        <p class="sec-lead">My path runs from retail floors and shop-floor planning to telecom support and banking sales. Select a segment, or step through the roles, to see what I did in each.</p>
+
+        <div class="bar-wrap">
+          <div class="bar" id="careerBar" role="tablist" aria-label="Career timeline"></div>
+          <div class="years"><span>2019</span><span>2021</span><span>2023</span><span>Today</span></div>
+          <div class="legend">
+            <span style="--c:var(--c-fin)"><i></i>Financial services</span>
+            <span style="--c:var(--c-tel)"><i></i>Telecommunications</span>
+            <span style="--c:var(--c-mfg)"><i></i>Manufacturing</span>
+            <span style="--c:var(--c-ret)"><i></i>Retail</span>
+          </div>
+        </div>
+
+        <article class="detail" id="detail" role="tabpanel" aria-live="polite"></article>
+        <div class="stepper">
+          <button type="button" id="prev">Earlier role</button>
+          <button type="button" id="next">Later role</button>
+        </div>
+      </section>
+
+      <section id="capabilities">
+        <h2 class="sec-title">Capabilities</h2>
+        <p class="sec-lead">The tools and methods I rely on, and the working style behind them.</p>
+        <div class="toggle" role="group" aria-label="Skill type">
+          <button type="button" data-skill="hard" aria-pressed="true">Hard skills</button>
+          <button type="button" data-skill="soft" aria-pressed="false">Soft skills</button>
+        </div>
+        <div class="skill-grid" id="skillGrid"></div>
+        <p class="hint">Select any skill to see how I apply it.</p>
+      </section>
+
+      <section id="credentials">
+        <h2 class="sec-title">Credentials</h2>
+        <p class="sec-lead">Formal training that supports the operational side of my work.</p>
+        <div class="cred-cols">
+          <div>
+            <h3>Education</h3>
+            <ul class="list">
+              <li><b>Machinist</b><span>Saskatchewan Polytechnic, Regina, Canada. April 2020</span></li>
+              <li><b>Bachelor of Engineering, Mechanical Engineering</b><span>Gujarat Technological University, Ahmedabad, India. June 2017</span></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Certificates</h3>
+            <ul class="list">
+              <li><b>WHIMIS Training</b><span>Brandt Group of Companies</span></li>
+              <li><b>5S Kaizen: Workplace Organization</b><span>Brandt Group of Companies</span></li>
+              <li><b>Excel for Everyone: Core Foundation</b><span>Excel training</span></li>
+              <li><b>Excel for Everyone: Data Management</b><span>Excel training</span></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2 class="sec-title">Contact</h2>
+        <p class="sec-lead">Open to conversations about financial services, sales and operations roles. Phone number and résumé are shared on request.</p>
+        <div class="contact-grid">
+          <div class="c-list">
+            <div class="c-row">
+              <div><small>Email</small><a href="mailto:connect@patelmit.com">connect@patelmit.com</a></div>
+              <button class="copy" type="button" data-copy="connect@patelmit.com">Copy email</button>
+            </div>
+            <div class="c-row">
+              <div><small>Phone</small>Available on request</div>
+              <button class="copy" type="button" data-request="phone">Request number</button>
+            </div>
+            <div class="c-row">
+              <div><small>Résumé</small>Available on request</div>
+              <button class="copy" type="button" data-request="resume">Request résumé</button>
+            </div>
+            <div class="c-row">
+              <div><small>LinkedIn</small><a href="https://www.linkedin.com/in/mitp-patel" target="_blank" rel="noopener">linkedin.com/in/mitp-patel</a></div>
+            </div>
+            <div class="c-row">
+              <div><small>Location</small>Regina, Saskatchewan</div>
+            </div>
+          </div>
+
+          <div class="composer">
+            <h3>Send a message</h3>
+            <div class="field"><label for="cName">Your name</label><input id="cName" type="text" autocomplete="name"></div>
+            <div class="field"><label for="cTopic">Topic</label>
+              <select id="cTopic">
+                <option>Job opportunity</option>
+                <option>Networking</option>
+                <option>Business enquiry</option>
+                <option>Something else</option>
+              </select>
+            </div>
+            <div class="field"><label for="cMsg">Message</label><textarea id="cMsg"></textarea></div>
+            <button class="btn primary" type="button" id="sendBtn">Open in my email app</button>
+            <p class="note">This opens a pre-filled draft in your email app. Nothing is stored on this page.</p>
+          </div>
+        </div>
+      </section>
+
+      <footer>Mit Patel · Regina, Saskatchewan</footer>
+    </main>
+  </div>
+</div>
+<dialog id="reqDialog" aria-labelledby="reqTitle">
+  <div class="dlg" style="position:relative">
+    <button class="close" type="button" data-close aria-label="Close">×</button>
+    <h3 id="reqTitle">Request résumé</h3>
+    <p class="sub" id="reqSub">Tell me a little about yourself and I'll get back to you.</p>
+    <div id="reqForm" role="form" aria-labelledby="reqTitle" style="display:grid;gap:16px">
+      <div class="field" data-f="name"><label for="rName">Name<span class="req" aria-hidden="true">*</span></label><input id="rName" name="name" type="text" autocomplete="name" aria-required="true"><div class="err">Enter your name.</div></div>
+      <div class="field" data-f="email"><label for="rEmail">Email address<span class="req" aria-hidden="true">*</span></label><input id="rEmail" name="email" type="email" autocomplete="email" aria-required="true"><div class="err">Enter a valid email address.</div></div>
+      <div class="field"><label for="rCompany">Company details</label><input id="rCompany" name="company" type="text" autocomplete="organization" placeholder="Company name, role, website"></div>
+      <div class="field"><label for="rPurpose">Purpose of request</label><textarea id="rPurpose" name="purpose" placeholder="How will you use this information?"></textarea></div>
+      <div class="hp" aria-hidden="true"><label>Leave blank<input id="rGotcha" type="text" tabindex="-1" autocomplete="off"></label></div>
+      <div class="formerr" id="reqErr" role="alert"></div>
+      <div class="actions">
+        <button class="btn" type="button" data-close>Cancel</button>
+        <button class="btn primary" type="button" id="reqSubmit">Submit request</button>
+      </div>
+    </div>
+  </div>
+</dialog>
+
+<dialog id="okDialog" aria-labelledby="okTitle">
+  <div class="dlg success">
+    <div class="tick" aria-hidden="true">✓</div>
+    <h3 id="okTitle">Request submitted</h3>
+    <p class="sub" style="margin-top:0">Your request has been submitted. Mit Patel will reach out to you soon.</p>
+    <button class="btn primary" type="button" data-close>Close</button>
+  </div>
+</dialog>
+
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+(function(){
+  /* Theme */
+  var root=document.documentElement;
+  try{var saved=localStorage.getItem("mp-theme");if(saved)root.setAttribute("data-theme",saved);}catch(e){}
+  document.querySelectorAll("[data-theme-toggle]").forEach(function(b){
+    b.addEventListener("click",function(){
+      var dark=root.getAttribute("data-theme")==="dark"||(!root.getAttribute("data-theme")&&matchMedia("(prefers-color-scheme: dark)").matches);
+      var next=dark?"light":"dark";
+      root.setAttribute("data-theme",next);
+      try{localStorage.setItem("mp-theme",next);}catch(e){}
+    });
+  });
+
+  /* Roles (oldest to newest) */
+  var roles=[
+    {id:"walmart",title:"Customer Availability Process-2 Associate",org:"Walmart Canada",dates:"Nov 2019 to Aug 2021",sector:"Retail",c:"var(--c-ret)",w:21,short:"Walmart",
+     pts:["Assisted customers with product enquiries, located merchandise and resolved concerns with responsive, customer-focused service.","Stocked and replenished merchandise, kept product placement and availability accurate, and resolved inventory issues to support efficient store operations."]},
+    {id:"kitting",title:"Kitting Technician",org:"Brandt Group of Companies",dates:"Jun 2021 to Jan 2022",sector:"Manufacturing",c:"var(--c-mfg)",w:7,short:"Kitting",
+     pts:["Coordinated shipping, receiving and inventory tracking, and resolved customer and carrier issues to support accurate, timely order fulfillment.","Monitored project progress, prepared reports and maintained inventory accuracy while identifying ways to improve workflows and operational execution."]},
+    {id:"planner",title:"Material Planner",org:"Brandt Group of Companies",dates:"Jan 2022 to May 2023",sector:"Manufacturing",c:"var(--c-mfg)",w:16,short:"Material Planner",
+     pts:["Coordinated production planning and scheduling with sales, purchasing, vendors and shop management to meet customer requirements and on-time delivery.","Managed customer and vendor relationships, production orders, projects and enquiries, with timely follow-up and execution.","Evaluated workflows and operational processes to find opportunities for process improvement, efficiency gains and automation."]},
+    {id:"hgs",title:"Customer Advisor",org:"HGS Canada (Rogers together with Shaw)",dates:"May 2023 to Sept 2023",sector:"Telecommunications",c:"var(--c-tel)",w:4,short:"HGS",
+     pts:["Resolved inbound enquiries about billing, services, promotions and account changes with tailored solutions.","Identified customer needs through active listening, troubleshot service issues and drove timely resolutions that supported satisfaction and retention.","Processed payments, account updates, service changes and promotional requests accurately, using multiple systems to research customers and document interactions."]},
+    {gap:true,w:8},
+    {id:"cibc",title:"Financial Services Representative II (TB Outbound)",org:"CIBC",dates:"Jun 2024 to Present",sector:"Financial services",c:"var(--c-fin)",w:28,short:"CIBC",
+     pts:["Make outbound sales through needs-based client engagement, identifying financial needs and recommending suitable solutions. Recognized as a top performer in sales and customer service.","Execute client applications and validate supporting documentation accurately, following internal policies and regulatory requirements to minimize quality errors and compliance risk.","Manage sensitive client information across multiple financial systems, protecting data accuracy, confidentiality and documentation integrity.","Coach and onboard new hires, sharing process knowledge, sales practices, application procedures and quality standards.","Identify and champion process-improvement and automation opportunities that streamline workflows and reduce manual effort."]}
+  ];
+  var list=roles.filter(function(r){return !r.gap});
+  var bar=document.getElementById("careerBar"),detail=document.getElementById("detail");
+  var prev=document.getElementById("prev"),next=document.getElementById("next");
+  var idx=list.length-1;
+
+  roles.forEach(function(r){
+    var el=document.createElement("button");el.type="button";
+    el.style.setProperty("--w",r.w);
+    if(r.gap){el.className="seg gap";el.setAttribute("aria-hidden","true");el.tabIndex=-1;}
+    else{
+      el.className="seg";el.style.setProperty("--c",r.c);
+      el.setAttribute("role","tab");el.textContent=r.short;
+      el.setAttribute("aria-label",r.title+" at "+r.org+", "+r.dates);
+      el.addEventListener("click",function(){show(list.indexOf(r),true);});
+      r.el=el;
+    }
+    bar.appendChild(el);
+  });
+
+  function show(i,animate){
+    idx=i;var r=list[i];
+    list.forEach(function(x,j){x.el.setAttribute("aria-selected",j===i?"true":"false");});
+    detail.style.setProperty("--c",r.c);
+    detail.innerHTML='<span class="tag">'+r.sector+'</span>'+
+      '<h3 style="margin-top:14px">'+r.title+'</h3>'+
+      '<div class="org">'+r.org+'</div>'+
+      '<div class="meta"><span>'+r.dates+'</span></div>'+
+      '<ul>'+r.pts.map(function(p){return "<li>"+p+"</li>";}).join("")+'</ul>';
+    if(animate){detail.classList.remove("swap");void detail.offsetWidth;detail.classList.add("swap");}
+    prev.disabled=i===0;next.disabled=i===list.length-1;
+  }
+  prev.addEventListener("click",function(){if(idx>0)show(idx-1,true);});
+  next.addEventListener("click",function(){if(idx<list.length-1)show(idx+1,true);});
+  show(idx,false);
+
+  /* Skills */
+  var skills={
+    hard:[
+      ["Consultative sales","Using needs-based conversations to match clients with suitable financial solutions."],
+      ["Business development","Finding and growing client relationships through outbound engagement."],
+      ["Financial services operations","Processing client applications and documentation across multiple financial systems."],
+      ["Data analysis and reporting","Preparing reports and tracking accuracy in inventory and operations work."],
+      ["Planning and procurement","Coordinating production schedules with sales, purchasing and vendors."],
+      ["Office 365","Daily work across Microsoft tools, backed by Excel certificates."],
+      ["Process improvement","Spotting manual steps and proposing simpler, faster workflows."],
+      ["Automation and Power BI","Looking for automation and data-visualization opportunities that reduce manual effort."],
+      ["Compliance and documentation","Following policy and regulatory requirements to keep files accurate and audit-ready."],
+      ["CRM and ERP","Using business systems to research customers, track orders and record interactions."]
+    ],
+    soft:[
+      ["Client relationship management","Building trust through follow-up and clear communication."],
+      ["Customer engagement","Active listening to understand what a client actually needs."],
+      ["Negotiation and persuasion","Guiding conversations toward outcomes that work for the client and the business."],
+      ["Critical thinking","Working through problems in billing, orders and applications to reach the right fix."],
+      ["Business acumen","Connecting day-to-day work to delivery, retention and growth goals."],
+      ["Cross-functional collaboration","Working with sales, purchasing, vendors and shop teams to get things done."],
+      ["Adaptability","Moving across banking, telecom, retail and manufacturing environments."],
+      ["Attention to detail","Keeping data, documents and records accurate."],
+      ["Customer retention","Resolving issues quickly so customers stay satisfied."],
+      ["Continuous improvement","Applying 5S and Kaizen thinking to everyday workflows."]
+    ]
+  };
+  var grid=document.getElementById("skillGrid");
+  function renderSkills(kind){
+    grid.innerHTML="";
+    skills[kind].forEach(function(s){
+      var b=document.createElement("button");b.type="button";b.className="skill";
+      b.setAttribute("aria-expanded","false");
+      b.innerHTML="<strong>"+s[0]+"</strong><small>"+s[1]+"</small>";
+      b.addEventListener("click",function(){
+        var open=b.getAttribute("aria-expanded")==="true";
+        b.setAttribute("aria-expanded",open?"false":"true");
+      });
+      grid.appendChild(b);
+    });
+  }
+  renderSkills("hard");
+  document.querySelectorAll("[data-skill]").forEach(function(btn){
+    btn.addEventListener("click",function(){
+      document.querySelectorAll("[data-skill]").forEach(function(o){o.setAttribute("aria-pressed",o===btn?"true":"false");});
+      renderSkills(btn.dataset.skill);
+    });
+  });
+
+  /* Toast + copy */
+  var toast=document.getElementById("toast"),tt;
+  function say(m){toast.textContent=m;toast.classList.add("show");clearTimeout(tt);tt=setTimeout(function(){toast.classList.remove("show");},2000);}
+  document.querySelectorAll("[data-copy]").forEach(function(b){
+    b.addEventListener("click",function(){
+      var v=b.dataset.copy;
+      function fallback(){var t=document.createElement("textarea");t.value=v;document.body.appendChild(t);t.select();try{document.execCommand("copy");say("Copied");}catch(e){say("Copy failed. Select the text instead.");}document.body.removeChild(t);}
+      if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(v).then(function(){say("Copied");},fallback);}else fallback();
+    });
+  });
+
+  /* Composer */
+  document.getElementById("sendBtn").addEventListener("click",function(){
+    var n=document.getElementById("cName").value.trim();
+    var t=document.getElementById("cTopic").value;
+    var m=document.getElementById("cMsg").value.trim();
+    if(!m){say("Add a message first");document.getElementById("cMsg").focus();return;}
+    var body=m+(n?"\n\nFrom: "+n:"");
+    window.location.href="mailto:connect@patelmit.com?subject="+encodeURIComponent(t)+"&body="+encodeURIComponent(body);
+  });
+
+  /* Request forms (Formspree, AJAX) */
+  var FORMSPREE_URL="https://formspree.io/f/mjykndaz";
+  var reqDlg=document.getElementById("reqDialog"),okDlg=document.getElementById("okDialog");
+  var rName=document.getElementById("rName"),rEmail=document.getElementById("rEmail");
+  var rCompany=document.getElementById("rCompany"),rPurpose=document.getElementById("rPurpose"),rGot=document.getElementById("rGotcha");
+  var reqErr=document.getElementById("reqErr"),reqSubmit=document.getElementById("reqSubmit");
+  var kind="resume";
+  var labels={resume:{title:"Request résumé",type:"Resume request",sub:"Share a few details and Mit will send you his résumé."},
+              phone:{title:"Request phone number",type:"Phone number request",sub:"Share a few details and Mit will contact you with his phone number."}};
+  var emailRe=/^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  function setInvalid(input,bad){input.closest(".field").classList.toggle("invalid",bad);input.setAttribute("aria-invalid",bad?"true":"false");}
+  function openRequest(k){
+    kind=k;
+    document.getElementById("reqTitle").textContent=labels[k].title;
+    document.getElementById("reqSub").textContent=labels[k].sub;
+    [rName,rEmail,rCompany,rPurpose,rGot].forEach(function(i){i.value="";});
+    setInvalid(rName,false);setInvalid(rEmail,false);
+    reqErr.classList.remove("show");reqSubmit.disabled=false;reqSubmit.textContent="Submit request";
+    reqDlg.showModal();rName.focus();
+  }
+  document.querySelectorAll("[data-request]").forEach(function(b){
+    b.addEventListener("click",function(){openRequest(b.dataset.request);});
+  });
+  [reqDlg,okDlg].forEach(function(d){
+    d.addEventListener("click",function(e){
+      if(e.target===d||e.target.closest("[data-close]"))d.close();
+    });
+  });
+  rName.addEventListener("input",function(){setInvalid(rName,false);});
+  rEmail.addEventListener("input",function(){setInvalid(rEmail,false);});
+
+  reqSubmit.addEventListener("click",function(){
+    var badName=!rName.value.trim(),badEmail=!emailRe.test(rEmail.value.trim());
+    setInvalid(rName,badName);setInvalid(rEmail,badEmail);
+    if(badName){rName.focus();return;}
+    if(badEmail){rEmail.focus();return;}
+    if(rGot.value){return;} /* honeypot: silently ignore bots */
+
+    var payload={
+      name:rName.value.trim(),
+      email:rEmail.value.trim(),
+      company_details:rCompany.value.trim(),
+      purpose:rPurpose.value.trim(),
+      request_type:labels[kind].type,
+      _subject:labels[kind].type+" from "+rName.value.trim()
+    };
+    reqErr.classList.remove("show");
+    reqSubmit.disabled=true;reqSubmit.textContent="Submitting…";
+
+    fetch(FORMSPREE_URL,{method:"POST",headers:{"Accept":"application/json","Content-Type":"application/json"},body:JSON.stringify(payload)})
+      .then(function(r){
+        if(r.ok){reqDlg.close();okDlg.showModal();return;}
+        return r.json().then(function(d){
+          var msg=(d&&d.errors&&d.errors.map(function(e){return e.message;}).join(" "))||"The request could not be submitted.";
+          throw new Error(msg);
+        },function(){throw new Error("The request could not be submitted.");});
+      })
+      .catch(function(err){
+        reqErr.textContent=(err&&err.message?err.message:"The request could not be submitted.")+" Please try again, or email connect@patelmit.com.";
+        reqErr.classList.add("show");
+        reqSubmit.disabled=false;reqSubmit.textContent="Submit request";
+      });
+  });
+
+  /* Scroll spy */
+  var links=document.querySelectorAll("#railNav a, #topNav a");
+  var secs=document.querySelectorAll("main section");
+  if("IntersectionObserver" in window){
+    var io=new IntersectionObserver(function(es){
+      es.forEach(function(e){
+        if(e.isIntersecting){
+          links.forEach(function(a){a.classList.toggle("active",a.getAttribute("href")==="#"+e.target.id);});
+        }
+      });
+    },{rootMargin:"-30% 0px -60% 0px"});
+    secs.forEach(function(s){io.observe(s);});
+  }
+})();
+</script>
+</body>
+</html>
