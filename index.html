@@ -1,427 +1,617 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#071a2b">
-<meta name="description" content="Mit Patel — Financial Services, Business Operations and Process Improvement. A professional portfolio focused on client engagement, operational thinking and practical solutions.">
-<title>Mit Patel | Financial Services & Business Operations</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mit Patel | Financial Services &amp; Business Operations</title>
+<meta name="description" content="Mit Patel is a financial services professional in Regina, Saskatchewan with experience in client engagement, sales, operations and process improvement.">
+<meta name="author" content="Mit Patel">
+
+<!-- Link preview (LinkedIn, etc.). Replace the URLs below with your live site address. -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Mit Patel | Financial Services &amp; Business Operations">
+<meta property="og:description" content="Client engagement, sales, operations and process improvement.">
+<!-- <meta property="og:url" content="https://www.patelmit.com/"> -->
+<!-- <meta property="og:image" content="https://www.patelmit.com/image.JPG"> -->
+<meta name="twitter:card" content="summary">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23060c16'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='28' font-weight='700' text-anchor='middle' fill='%23d3b87f'%3EMP%3C/text%3E%3C/svg%3E">
+<meta name="theme-color" content="#f3f5f9" data-light="#f3f5f9" data-dark="#060c16">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<script>
+/* Apply the saved or system theme before first paint to avoid a flash */
+(function () {
+  var theme = 'dark';
+  try {
+    var saved = localStorage.getItem('theme');
+    if (saved === 'dark' || saved === 'light') theme = saved;
+    else if (false && window.matchMedia('(prefers-color-scheme: dark)').matches) theme = 'dark';
+  } catch (e) {}
+  document.documentElement.setAttribute('data-theme', theme);
+})();
+</script>
 <style>
-:root{--ink:#10283f;--muted:#617286;--navy:#071a2b;--navy2:#0d2c46;--blue:#1769d2;--sky:#e9f3ff;--paper:#f6f8fb;--line:#dfe7ef;--white:#fff;--radius:24px;--shadow:0 18px 55px rgba(11,35,58,.10)}
-*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:92px}body{margin:0;background:#fff;color:var(--ink);font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}button,a{ -webkit-tap-highlight-color:transparent}.wrap{width:min(1160px,calc(100% - 44px));margin:auto}.topbar{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.82);backdrop-filter:blur(18px);border-bottom:1px solid rgba(215,226,237,.75)}.nav{height:76px;display:flex;align-items:center;justify-content:center;gap:20px}.brand{font-weight:800;letter-spacing:-.045em;font-size:1.34rem;color:var(--navy)}.brand small{display:block;font-size:.68rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-top:-2px}.navlinks{display:flex;align-items:center;justify-content:center;gap:24px;font-size:.86rem;color:#40556b;flex:1}.navlinks a{transition:color .2s}.navlinks a:hover{color:var(--blue)}.nav-cta,.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border-radius:999px;padding:12px 19px;font-weight:650;font-size:.88rem;border:1px solid transparent;cursor:pointer;transition:transform .22s,box-shadow .22s,background .22s}.nav-cta,.btn-primary{background:var(--navy);color:white}.nav-cta:hover,.btn-primary:hover{background:#123e61;transform:translateY(-2px);box-shadow:0 9px 24px #071a2b22}.btn-secondary{border-color:#b9c8d7;background:rgba(255,255,255,.7);color:var(--ink)}.btn-secondary:hover{border-color:var(--blue);transform:translateY(-2px)}.menu-toggle{display:none;background:none;border:0;font-size:1.5rem;color:var(--ink)}.hero-name{font-size:clamp(2.15rem,4vw,3.2rem);font-weight:850;letter-spacing:-.055em;color:var(--navy);line-height:1.02;margin:0 0 8px}.hero-name + .eyebrow{margin-top:0}.hero{overflow:hidden;position:relative;background:radial-gradient(circle at 80% 25%,#dceeff 0,transparent 30%),linear-gradient(120deg,#f7faff 0%,#edf5ff 55%,#fff 100%);padding:86px 0 56px}.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:64px}.eyebrow{font-size:.72rem;font-weight:750;text-transform:uppercase;letter-spacing:.15em;color:#38658b;margin:0 0 18px}.hero-line{display:block;white-space:nowrap;}.hero-line-last{text-transform:none;}.hero h1{font-size:clamp(3.15rem,6vw,5.65rem);letter-spacing:-.065em;line-height:1.03;margin:0 0 24px;max-width:720px;font-weight:750}.hero h1 span{color:var(--blue)}.lead{font-size:1.1rem;line-height:1.75;color:#4e6277;max-width:600px}.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}.hero-visual{min-height:420px;position:relative;display:flex;align-items:center;justify-content:center}.hero-photo{width:88%;height:410px;object-fit:cover;border-radius:34px;box-shadow:0 30px 80px #1d4c7626;filter:saturate(.85)}.floating-note{position:absolute;left:0;bottom:34px;background:#fffdf8;border:1px solid #e4eaf0;border-radius:20px;padding:17px 20px;box-shadow:var(--shadow);max-width:220px}.floating-note strong{display:block;font-size:.94rem}.floating-note span{font-size:.78rem;color:var(--muted)}.hero-statline{border-top:1px solid #dce5ee;margin-top:64px;padding-top:24px;display:flex;gap:50px;color:var(--muted);font-size:.8rem}.hero-statline strong{display:block;color:var(--ink);font-size:1.25rem;letter-spacing:-.04em}.section{padding:100px 0}.section-soft{background:var(--paper)}.section-dark{background:linear-gradient(130deg,#071a2b,#103854);color:#fff}.section-head{max-width:720px;margin-bottom:42px}.section-head.center{text-align:center;margin-left:auto;margin-right:auto}.section h2{font-size:clamp(2.1rem,4vw,3.5rem);letter-spacing:-.055em;line-height:1.1;margin:0 0 15px}.section-head p{color:var(--muted);font-size:1.02rem;margin:0}.section-dark .section-head p{color:#b7c9d9}.cap-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.cap-card{background:#fff;border:1px solid #e7edf3;border-radius:22px;padding:25px 22px;transition:transform .25s,box-shadow .25s}.cap-card:hover,.work-card:hover{transform:translateY(-5px);box-shadow:var(--shadow)}.icon{width:48px;height:48px;display:grid;place-items:center;background:#e9f3ff;border-radius:16px;color:#145fae;font-size:1.3rem;margin-bottom:22px}.cap-card h3{font-size:1.04rem;line-height:1.3;letter-spacing:-.025em;margin:0 0 10px}.cap-card p{font-size:.88rem;color:var(--muted);margin:0}.split{display:grid;grid-template-columns:.8fr 1.2fr;gap:72px;align-items:start}.sticky-copy{position:sticky;top:120px}.body-copy{font-size:1.02rem;color:#586b7e}.body-copy p{margin-top:0;margin-bottom:18px}.principles{display:grid;grid-template-columns:1fr 1fr;gap:13px;margin-top:30px}.principle{padding:17px;border:1px solid #dfe7ef;border-radius:16px;background:#ffffffa8}.principle strong{display:block;margin-bottom:4px}.principle span{font-size:.86rem;color:var(--muted)}.timeline{position:relative;margin-left:10px}.timeline:before{content:"";position:absolute;left:10px;top:9px;bottom:15px;width:2px;background:#d6e4f2}.timeline-item{position:relative;padding:0 0 36px 42px}.timeline-item:before{content:"";position:absolute;left:2px;top:7px;width:18px;height:18px;border:4px solid #dceeff;background:var(--blue);border-radius:50%;z-index:1}.timeline-top{display:flex;justify-content:space-between;gap:20px;align-items:start}.timeline h3{font-size:1.12rem;margin:0 0 3px}.timeline .org{color:#3b6e9a;font-weight:650;font-size:.9rem}.timeline .date{font-size:.78rem;color:var(--muted);white-space:nowrap}.timeline p{color:var(--muted);margin:10px 0 0;font-size:.93rem}.tag-row{display:flex;gap:7px;flex-wrap:wrap;margin-top:12px}.tag{font-size:.73rem;padding:5px 10px;border:1px solid #dbe6f0;border-radius:999px;color:#536a80;background:#fff}.career-band{margin-top:30px;padding:22px 24px;background:linear-gradient(110deg,#e9f3ff,#f8fbff);border-radius:20px;color:#35536d;font-size:.9rem}.career-band strong{color:var(--ink)}.work-intro{display:grid;grid-template-columns:1fr .7fr;gap:50px;align-items:end;margin-bottom:32px}.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px}.filter{border:1px solid #d3dfeb;background:#fff;border-radius:999px;padding:9px 15px;color:#4e6277;font-size:.82rem;cursor:pointer}.filter.active,.filter:hover{background:var(--navy);border-color:var(--navy);color:#fff}.work-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.work-card{border:1px solid #e0e8f0;background:#fff;border-radius:23px;overflow:hidden;transition:transform .25s,box-shadow .25s;display:flex;flex-direction:column}.work-img{height:190px;width:100%;object-fit:cover;background:#e6eef7}.work-content{padding:23px;display:flex;flex-direction:column;flex:1}.work-kicker{font-size:.72rem;color:#2b6aab;font-weight:750;text-transform:uppercase;letter-spacing:.09em}.work-card h3{font-size:1.12rem;line-height:1.35;letter-spacing:-.025em;margin:9px 0}.work-card p{font-size:.88rem;color:var(--muted);margin:0 0 18px}.work-link{font-size:.85rem;color:#135eaa;font-weight:700;margin-top:auto;display:inline-flex;align-items:center;gap:7px}.work-note{margin-top:25px;padding:19px 22px;background:#f1f6fb;border-radius:16px;color:#617286;font-size:.84rem}.approach-banner{border-radius:30px;overflow:hidden;background:#e8f2fb;display:grid;grid-template-columns:1.1fr .9fr;min-height:310px}.approach-text{padding:48px}.approach-text p{color:#526a80;max-width:520px}.approach-img{width:100%;height:100%;min-height:300px;object-fit:cover}.resume-layout{display:grid;grid-template-columns:.9fr 1.1fr;gap:55px;align-items:start}.resume-points{display:grid;gap:13px;margin-top:28px}.resume-point{display:flex;gap:12px;align-items:center;color:#536b80;font-size:.9rem}.resume-point span:first-child{display:grid;place-items:center;width:34px;height:34px;background:#e4f1ff;border-radius:12px;color:#1769d2}.form-card{background:#fff;border:1px solid #e0e8f0;border-radius:24px;padding:30px;box-shadow:var(--shadow)}.form-card h3{font-size:1.35rem;margin:0 0 6px}.form-card>p{color:var(--muted);font-size:.88rem;margin:0 0 23px}.field{display:grid;gap:7px;margin-bottom:15px}.field label{font-size:.82rem;font-weight:650;color:#42586d}.field input,.field select,.field textarea{width:100%;border:1px solid #d5e0eb;background:#fbfdff;border-radius:12px;padding:12px 14px;color:var(--ink);outline:none;transition:border .2s,box-shadow .2s}.field input:focus,.field select:focus,.field textarea:focus{border-color:#5d9ce2;box-shadow:0 0 0 3px #1769d21b}.field textarea{min-height:100px;resize:vertical}.form-hint{font-size:.76rem;color:var(--muted);margin-top:12px}.form-status{display:none;margin-top:14px;padding:13px;border-radius:12px;background:#edf8f1;color:#245d3b;font-size:.85rem}.contact-hero{padding:72px 0;background:radial-gradient(circle at 80% 20%,#164c70 0,transparent 35%),linear-gradient(130deg,#071a2b,#0b2d48);color:#fff}.contact-hero-grid{display:grid;grid-template-columns:1fr .75fr;gap:60px;align-items:center}.contact-hero p{color:#c0d0de;max-width:580px}.contact-info{border:1px solid #ffffff2b;border-radius:22px;padding:25px;background:#ffffff0a}.contact-row{display:flex;gap:13px;padding:12px 0;border-bottom:1px solid #ffffff1a}.contact-row:last-child{border:0}.contact-row .small-icon{width:38px;height:38px;border-radius:13px;background:#ffffff15;display:grid;place-items:center}.contact-row small{display:block;color:#a9c1d4;font-size:.73rem}.contact-row strong{font-size:.9rem;font-weight:600;overflow-wrap:anywhere}.contact-bottom{display:grid;grid-template-columns:1fr;gap:30px;align-items:start;margin-top:34px}.contact-bottom .form-card{box-shadow:none}.footer{background:#061725;color:#dbe6ef;padding:35px 0}.footer-top{display:flex;justify-content:space-between;align-items:center;gap:20px}.footer .brand small{color:#91a6b9}.footer-links{display:flex;gap:20px;flex-wrap:wrap;font-size:.82rem;color:#b4c4d3}.copyright{font-size:.76rem;color:#8298ab;margin-top:26px;border-top:1px solid #ffffff18;padding-top:18px;display:flex;justify-content:space-between;gap:20px}.reveal{opacity:0;transform:translateY(18px);transition:opacity .65s ease,transform .65s ease}.reveal.visible{opacity:1;transform:none}.hide{display:none!important}.mobile-nav{display:none}
-@media(max-width:900px){.navlinks{gap:13px;font-size:.79rem}.hero-grid{gap:30px}.hero-visual{min-height:340px}.hero-photo{height:340px}.cap-grid{grid-template-columns:repeat(2,1fr)}.work-grid{grid-template-columns:repeat(2,1fr)}.split{gap:35px}.contact-hero-grid{gap:30px}}
-@media(max-width:680px){.wrap{width:min(100% - 32px,560px)}.nav{height:66px}.menu-toggle{display:block}.navlinks{display:none;position:absolute;left:0;right:0;top:66px;padding:18px 22px 22px;background:#fff;border-bottom:1px solid var(--line);box-shadow:0 18px 25px #071a2b0d;flex-direction:column;align-items:stretch;gap:0}.navlinks.open{display:flex}.navlinks a{padding:12px 0;border-bottom:1px solid #eef2f6}.navlinks .nav-cta{margin-top:12px;justify-content:center}.hero{padding:55px 0 35px}.hero-grid{grid-template-columns:1fr;gap:25px}.hero h1{font-size:clamp(2.65rem,12vw,4.2rem)}.lead{font-size:1rem}.hero-visual{min-height:290px}.hero-photo{height:300px;width:100%;border-radius:24px}.floating-note{left:10px;bottom:12px}.hero-statline{margin-top:35px;gap:22px;justify-content:space-between}.hero-statline strong{font-size:1.08rem}.section{padding:70px 0}.section h2{font-size:2.35rem}.cap-grid,.work-grid{grid-template-columns:1fr}.cap-card{padding:23px}.split,.resume-layout,.contact-hero-grid,.contact-bottom,.work-intro,.approach-banner{grid-template-columns:1fr;gap:28px}.sticky-copy{position:static}.principles{grid-template-columns:1fr 1fr}.timeline-top{display:block}.timeline .date{display:block;margin-top:5px}.work-img{height:205px}.approach-text{padding:30px}.approach-img{min-height:220px;max-height:250px}.form-card{padding:22px}.contact-hero{padding:55px 0}.footer-top,.copyright{align-items:flex-start;flex-direction:column}.footer-links{gap:14px}.section-head{margin-bottom:30px}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}.reveal{opacity:1;transform:none}}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--sans);font-size:1.0625rem;line-height:1.65;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+img{max-width:100%;display:block}
+[hidden]{display:none!important}
+a{color:var(--link);text-underline-offset:3px}
+h1,h2,h3{margin:0}
+p{margin:0 0 1em}
+ul{margin:0;padding:0;list-style:none}
+dl,dd{margin:0}
+:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:4px}
+.wrap{width:min(var(--max),calc(100% - 48px));margin-inline:auto}
+.skip{position:absolute;left:-999px;top:8px;background:var(--accent);color:var(--accent-text);padding:10px 16px;border-radius:6px;z-index:200}
+.skip:focus{left:12px}
 
-.request-modal{position:fixed;inset:0;z-index:100;background:rgba(7,26,43,.62);backdrop-filter:blur(8px);display:none;align-items:center;justify-content:center;padding:20px}
-.request-modal.open{display:flex}
-.request-dialog{position:relative;width:min(560px,100%);max-height:min(90vh,760px);overflow:auto;background:#fff;border-radius:26px;padding:30px;box-shadow:0 30px 90px rgba(7,26,43,.28)}
-.request-close{position:absolute;right:18px;top:15px;width:38px;height:38px;border:0;border-radius:50%;background:#eef4f9;color:var(--ink);font-size:1.35rem;cursor:pointer}
-.request-dialog h3{font-size:1.5rem;letter-spacing:-.035em;margin:0 42px 6px 0}
-.request-dialog>p{color:var(--muted);font-size:.88rem;margin:0 0 22px}
-.request-dialog .field{margin-bottom:14px}
-.request-success{display:none;text-align:center;padding:34px 10px 20px}
-.request-success .success-icon{width:58px;height:58px;border-radius:50%;display:grid;place-items:center;background:#e9f7ef;color:#257044;font-size:1.5rem;margin:0 auto 18px}
-.request-success h3{margin:0 0 9px;font-size:1.55rem}
-.request-success p{margin:0 auto;color:var(--muted);max-width:390px}
-.request-dialog.submitted .request-form{display:none}
-.request-dialog.submitted .request-success{display:block}
-.contact-request-btn{margin-top:7px;padding:8px 13px;font-size:.78rem}
-.request-type-note{font-size:.75rem;color:var(--muted);margin-top:10px}
-@media(max-width:680px){.request-dialog{padding:24px 20px;border-radius:22px}.request-modal{padding:12px}}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:inherit;font-size:.95rem;font-weight:600;line-height:1;padding:14px 22px;border-radius:var(--btn-radius,8px);border:1px solid transparent;cursor:pointer;text-decoration:none;transition:background-color .18s,border-color .18s,color .18s,transform .18s}
+.btn-primary{background:var(--accent);color:var(--accent-text)}
+.btn-primary:hover{background:var(--accent-hover);color:var(--accent-text)}
+.btn-secondary{background:transparent;color:var(--text);border-color:var(--line-strong,var(--line))}
+.btn-secondary:hover{border-color:var(--link);color:var(--link)}
+.btn-sm{padding:10px 16px;font-size:.9rem}
+.text-btn{background:none;border:0;padding:0;font:inherit;font-weight:500;color:var(--link);text-decoration:underline;text-underline-offset:3px;cursor:pointer}
+.text-btn:hover{color:var(--accent-hover)}
 
-/* Professional color refinement: replace near-black text/tabs with a deep teal-slate */
-.brand,.hero-name,.hero h1,.cap-card h3,.timeline h3,.form-card h3,.request-dialog h3,
-.section h2,.approach-text h2,.resume-layout h2{color:#164e63}
-.hero h1 span,.navlinks a:hover{color:#176f7a}
-.nav-cta,.btn-primary{background:#164e63}
-.nav-cta:hover,.btn-primary:hover{background:#1d6174;box-shadow:0 9px 24px rgba(22,78,99,.16)}
-.filter.active,.filter:hover{background:#164e63;border-color:#164e63}
-.menu-toggle{color:#164e63}
+.site-header{position:sticky;top:0;z-index:50}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:24px;height:72px}
+.brand{text-decoration:none;color:var(--text)}
+.nav-links{display:flex;align-items:center;gap:30px}
+.nav-links a:not(.btn){color:var(--muted);font-size:.95rem;font-weight:500;text-decoration:none;transition:color .15s}
+.nav-links a:not(.btn):hover,.nav-links a[aria-current="true"]{color:var(--text)}
+.nav-actions{display:flex;align-items:center;gap:10px}
+.icon-btn{display:inline-grid;place-items:center;width:40px;height:40px;border-radius:var(--btn-radius,8px);border:1px solid var(--line-strong,var(--line));background:transparent;color:var(--text);cursor:pointer;transition:border-color .15s}
+.icon-btn:hover{border-color:var(--link)}
+.icon-btn svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.menu-btn{display:none}
+.theme-btn .moon{display:none}
+:root[data-theme="dark"] .theme-btn .sun{display:none}
+:root[data-theme="dark"] .theme-btn .moon{display:block}
 
-/* Distinct brand color for Mit Patel */
-.brand{color:#9a6a2f}
+.portrait{margin:0;position:relative;overflow:hidden}
+.portrait img{width:100%;height:100%;object-fit:cover;object-position:50% 20%}
+.portrait.no-photo{display:grid;place-items:center}
+.portrait.no-photo::after{content:attr(data-initials);font-family:var(--serif);font-size:5rem;color:var(--accent);opacity:.75}
 
-/* Dark mode */
-.theme-toggle{
-  display:inline-flex;align-items:center;justify-content:center;gap:7px;
-  border:1px solid #c8d5df;background:#fff;color:#164e63;border-radius:999px;
-  padding:9px 13px;font-size:.78rem;font-weight:650;cursor:pointer;
-  transition:background .2s,border-color .2s,color .2s
+.site-footer{padding:30px 0;color:var(--muted);font-size:.92rem}
+.footer-row{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.site-footer a{color:var(--muted)}
+.site-footer a:hover{color:var(--text)}
+
+/* Request dialog */
+dialog.request{border:1px solid var(--line);padding:0;border-radius:var(--dialog-radius,16px);width:min(520px,calc(100% - 28px));max-height:calc(100vh - 28px);background:var(--bg);color:var(--text);box-shadow:0 30px 80px rgba(4,10,20,.4)}
+dialog.request::backdrop{background:rgba(4,10,20,.62);backdrop-filter:blur(4px)}
+.request-inner{padding:34px;position:relative}
+.request h3{font-family:var(--serif);font-weight:var(--h-weight,500);font-size:1.6rem;margin:0 36px 6px 0;letter-spacing:-.01em}
+.request .intro{color:var(--muted);font-size:.97rem;margin-bottom:22px}
+.close-btn{position:absolute;top:16px;right:16px;width:36px;height:36px;font-size:1.4rem;line-height:1;display:grid;place-items:center;border:0;border-radius:8px;background:transparent;color:var(--muted);cursor:pointer}
+.close-btn:hover{background:var(--bg-alt);color:var(--text)}
+.field{margin-bottom:16px}
+.field label{display:block;font-size:.92rem;font-weight:600;margin-bottom:6px}
+.field .opt{font-weight:400;color:var(--muted)}
+.field input,.field textarea{width:100%;font:inherit;font-size:1rem;color:var(--text);background:var(--bg-alt);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+.field input:focus,.field textarea:focus{outline:none;border-color:var(--focus);box-shadow:0 0 0 3px color-mix(in srgb,var(--focus) 28%,transparent)}
+.field textarea{min-height:96px;resize:vertical}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.form-note{font-size:.85rem;color:var(--muted);margin:14px 0 0}
+.form-error{margin:14px 0 0;padding:12px 14px;border-radius:10px;background:var(--error-bg);color:var(--error-text);font-size:.92rem}
+.success{display:none;text-align:center;padding:12px 0 4px}
+.success h3{margin:0 0 8px}
+.success p{color:var(--muted);margin-bottom:22px}
+.request.sent .request-form{display:none}
+.request.sent .success{display:block}
+
+@media (max-width:760px){
+  .menu-btn{display:inline-grid}
+  .nav{height:64px}
+  .nav-links{position:absolute;left:0;right:0;top:100%;flex-direction:column;align-items:stretch;gap:0;padding:6px 24px 22px;background:var(--bg);border-bottom:1px solid var(--line);display:none}
+  .nav-links.open{display:flex}
+  .nav-links a:not(.btn){padding:15px 0;border-bottom:1px solid var(--line);font-size:1.02rem}
+  .nav-links .btn{margin-top:18px}
+  .nav-actions .nav-cta{display:none}
 }
-.theme-toggle:hover{border-color:#9a6a2f;color:#9a6a2f}
-html.dark{
-  color-scheme:dark;
-  --ink:#e7eef3;--muted:#a9bac7;--navy:#dce9ef;--navy2:#bdd0da;
-  --blue:#6db7c3;--sky:#193b48;--paper:#101c24;--line:#29404d;--white:#16252e;
-  --shadow:0 18px 55px rgba(0,0,0,.28)
+@media (max-width:600px){
+  .wrap{width:calc(100% - 36px)}
+  .request-inner{padding:28px 20px}
 }
-html.dark body{background:#0b151c;color:var(--ink)}
-html.dark .topbar{background:rgba(11,21,28,.88);border-bottom-color:rgba(66,91,105,.55)}
-html.dark .brand{color:#c89a5a}
-html.dark .brand small{color:#9fb2bf}
-html.dark .navlinks{color:#b7c7d1}
-html.dark .navlinks a:hover{color:#79c5cf}
-html.dark .nav-cta,html.dark .btn-primary{background:#2b7380;color:#fff}
-html.dark .nav-cta:hover,html.dark .btn-primary:hover{background:#378b98}
-html.dark .theme-toggle{background:#152832;border-color:#3b5664;color:#c9d9e1}
-html.dark .menu-toggle{color:#d6e4ea}
-html.dark .hero{background:radial-gradient(circle at 80% 25%,#183d4b 0,transparent 30%),linear-gradient(120deg,#0d1b23 0%,#112832 55%,#0b151c 100%)}
-html.dark .hero-name,html.dark .hero h1,html.dark .section h2,html.dark .cap-card h3,
-html.dark .timeline h3,html.dark .form-card h3,html.dark .request-dialog h3,
-html.dark .approach-text h2,html.dark .resume-layout h2{color:#e4edf2}
-html.dark .hero h1 span{color:#76c6d0}
-html.dark .lead,html.dark .body-copy{color:#afc0cb}
-html.dark .eyebrow{color:#82b8c5}
-html.dark .hero-statline{border-top-color:#29404d}
-html.dark .hero-statline strong{color:#e5eef2}
-html.dark .section-soft{background:#101c24}
-html.dark .cap-card,html.dark .work-card,html.dark .form-card,
-html.dark .request-dialog{background:#14232c;border-color:#2b414d}
-html.dark .cap-card p,html.dark .work-card p,html.dark .timeline p,
-html.dark .section-head p,html.dark .form-card>p,html.dark .request-dialog>p{color:#9fb2bf}
-html.dark .icon{background:#193b48;color:#79c5cf}
-html.dark .principle{background:#14232ccc;border-color:#29404d}
-html.dark .principle span,html.dark .timeline .date,html.dark .career-band,
-html.dark .tag,html.dark .work-note,html.dark .form-hint{color:#a8bac5}
-html.dark .timeline:before{background:#294653}
-html.dark .timeline-item:before{border-color:#1b3d49;background:#63b7c1}
-html.dark .tag{background:#13232c;border-color:#304854}
-html.dark .career-band{background:linear-gradient(110deg,#193b48,#12232c)}
-html.dark .career-band strong{color:#e1edf2}
-html.dark .filter{background:#14232c;border-color:#304854;color:#b8c8d1}
-html.dark .filter.active,html.dark .filter:hover{background:#2b7380;border-color:#2b7380;color:#fff}
-html.dark .work-link{color:#79c5cf}
-html.dark .work-note{background:#14242d}
-html.dark .approach-banner{background:#18333e}
-html.dark .approach-text p{color:#afc0cb}
-html.dark .resume-point{color:#a9bbc6}
-html.dark .resume-point span:first-child{background:#193b48;color:#79c5cf}
-html.dark .field label{color:#bfd0d9}
-html.dark .field input,html.dark .field select,html.dark .field textarea{
-  background:#0f1b22;border-color:#304854;color:#e2ebef
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{transition:none!important}
 }
-html.dark .field input::placeholder,html.dark .field textarea::placeholder{color:#718895}
-html.dark .request-close{background:#20343e;color:#d9e5ea}
-html.dark .request-success .success-icon{background:#18382c;color:#7ac29a}
-html.dark .contact-hero{background:radial-gradient(circle at 80% 20%,#1b5260 0,transparent 35%),linear-gradient(130deg,#08161d,#0d2933)}
-html.dark .contact-info{border-color:#ffffff24;background:#ffffff08}
-html.dark .contact-row{border-bottom-color:#ffffff15}
-html.dark .footer{background:#071118}
-html.dark .footer .brand small{color:#829ba8}
-html.dark .footer-links{color:#9eb2bd}
-html.dark .copyright{color:#8196a2;border-top-color:#ffffff15}
-@media(max-width:680px){
-  html.dark .navlinks{background:#0f1c23;border-bottom-color:#29404d}
-  html.dark .navlinks a{border-bottom-color:#21353f}
+@media print{
+  .site-header,.hero-actions,.contact-actions,.site-footer .back,dialog{display:none!important}
 }
 
-html.dark .btn-secondary{
-  background:#245e6b;
-  border-color:#6fc2ce;
-  color:#ffffff;
-  box-shadow:0 6px 18px rgba(0,0,0,.24)
+:root{
+  --bg:#f3f5f9; --bg-alt:#ffffff; --panel:#ffffff; --text:#0a1424; --muted:#56667d; --line:#dde3ec; --line-strong:#c4cedc;
+  --accent:#11294a; --accent-hover:#1b3b66; --accent-text:#fff; --link:#11294a; --focus:#2a5f9e;
+  --gold:#8f6c2a; --glow:rgba(143,108,42,.10); --error-bg:#fdecec; --error-text:#8f2a2a;
+  --serif:"Manrope",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  --sans:"Manrope",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  --max:1180px; --btn-radius:12px; --h-weight:600; --dialog-radius:22px;
 }
-html.dark .btn-secondary:hover{
-  background:#317b89;
-  border-color:#8bd4dd;
-  color:#ffffff;
-  transform:translateY(-2px)
+:root[data-theme="dark"]{
+  --bg:#060c16; --bg-alt:#0a1220; --panel:#0d1627; --text:#eef2f8; --muted:#97a6bb; --line:rgba(255,255,255,.08); --line-strong:rgba(255,255,255,.16);
+  --accent:#d3b87f; --accent-hover:#e3cc9b; --accent-text:#0a1220; --link:#d3b87f; --focus:#d3b87f;
+  --gold:#d3b87f; --glow:rgba(211,184,127,.13); --error-bg:#3a1f1f; --error-text:#f2b4b4; color-scheme:dark;
 }
-html.dark .contact-request-btn{
-  background:#245e6b;
-  border-color:#6fc2ce;
-  color:#ffffff
+body{font-weight:400}
+h1,h2,h3{font-family:var(--serif);font-weight:600;letter-spacing:-.035em;line-height:1.1}
+:root[data-theme="dark"] a:hover{color:#f0dcb0}
+:root[data-theme="dark"] .btn-secondary:hover{border-color:var(--gold);color:var(--gold)}
+
+/* Header */
+.site-header{background:color-mix(in srgb,var(--bg) 80%,transparent);backdrop-filter:blur(18px) saturate(1.4);-webkit-backdrop-filter:blur(18px) saturate(1.4);border-bottom:1px solid var(--line)}
+.brand{font-weight:700;font-size:1.1rem;letter-spacing:-.02em;display:inline-flex;align-items:center;gap:12px}
+.brand::before{content:"MP";display:grid;place-items:center;width:34px;height:34px;border-radius:10px;border:1px solid var(--gold);color:var(--gold);font-size:.72rem;letter-spacing:.02em;font-weight:700}
+.nav-links a[aria-current="true"]{color:var(--text)}
+.nav-links a[aria-current="true"]{box-shadow:0 1px 0 var(--gold);padding-bottom:3px}
+.nav-actions .nav-cta{border-radius:999px}
+
+/* Hero */
+.hero{position:relative;padding:clamp(56px,8vw,112px) 0 clamp(72px,9vw,128px);overflow:hidden}
+.hero::before{content:"";position:absolute;width:760px;height:760px;right:-180px;top:-200px;background:radial-gradient(closest-side,var(--glow),transparent 72%);pointer-events:none}
+.hero-grid{position:relative;display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(40px,7vw,96px);align-items:center}
+.hero-role{display:inline-flex;align-items:center;gap:14px;color:var(--gold);font-size:1rem;font-weight:600;margin:0 0 26px}
+.hero-role::before{content:"";width:40px;height:1px;background:var(--gold)}
+.hero h1{font-size:clamp(3.4rem,8vw,6.4rem);font-weight:600;letter-spacing:-.05em;line-height:.98;margin:0 0 28px}
+.hero-summary{font-size:1.2rem;line-height:1.65;color:var(--muted);max-width:31em;margin-bottom:38px}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px}
+.portrait-wrap{position:relative}
+.portrait{aspect-ratio:4/5;border-radius:28px;background:var(--panel);border:1px solid var(--line-strong);box-shadow:0 40px 90px -30px rgba(4,10,24,.45)}
+.portrait-wrap::before{content:"";position:absolute;inset:-14px;border-radius:38px;border:1px solid var(--line);pointer-events:none}
+.hero-facts{display:grid;grid-template-columns:repeat(2,minmax(0,auto));justify-content:start;gap:16px 56px;margin:46px 0 0;padding-top:26px;border-top:1px solid var(--line-strong)}
+.hero-facts dt{font-size:.82rem;color:var(--muted);margin-bottom:3px}
+.hero-facts dd{font-weight:600;font-size:1.02rem;letter-spacing:-.01em;line-height:1.35}
+
+/* Sections */
+.section{padding:clamp(72px,9vw,128px) 0;border-top:1px solid var(--line)}
+.section.alt{background:var(--bg-alt)}
+.section-head{max-width:640px;margin-bottom:clamp(36px,5vw,64px)}
+.section h2{font-size:clamp(2.2rem,4.4vw,3.5rem);letter-spacing:-.045em}
+.section h2::before{content:"";display:block;width:44px;height:2px;background:var(--gold);margin-bottom:22px}
+.section-lead{color:var(--muted);margin:18px 0 0;font-size:1.05rem}
+.section-lead:empty{display:none}
+
+.about-grid{display:block}
+.prose{max-width:none;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 clamp(32px,6vw,88px)}
+.prose p{font-size:1.1rem;line-height:1.8;color:var(--muted);max-width:32em}
+.prose p:first-child{grid-column:1/-1;max-width:21em;margin-bottom:clamp(32px,4vw,52px);color:var(--text);font-size:clamp(1.7rem,3.4vw,2.6rem);line-height:1.28;font-weight:500;letter-spacing:-.04em}
+.prose p:last-child{margin-bottom:0}
+.strengths{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;margin-top:clamp(48px,6vw,80px);border:1px solid var(--line-strong);border-radius:26px;background:var(--line-strong);overflow:hidden}
+.strengths li{background:var(--panel);padding:32px 28px 34px;position:relative;transition:background-color .25s}
+.strengths li:hover{background:color-mix(in srgb,var(--panel) 90%,var(--gold))}
+.strengths .ico{display:grid;place-items:center;width:44px;height:44px;border-radius:14px;border:1px solid color-mix(in srgb,var(--gold) 55%,transparent);margin-bottom:56px;color:var(--gold)}
+.strengths .ico svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.strengths strong{display:block;font-size:1.15rem;font-weight:600;letter-spacing:-.03em;margin-bottom:6px}
+.strengths span{color:var(--muted);font-size:.97rem;line-height:1.55;display:block}
+
+/* Timeline */
+.roles{position:relative;display:grid;gap:18px;padding-left:44px}
+.roles::before{content:"";position:absolute;left:11px;top:14px;bottom:14px;width:1px;background:linear-gradient(var(--gold),var(--line-strong) 40%,var(--line))}
+.role{position:relative;display:flex;flex-direction:column-reverse;gap:6px;padding:28px 32px;border:1px solid var(--line);border-radius:22px;background:var(--panel);transition:border-color .2s}
+.role:hover{border-color:var(--line-strong)}
+.role::before{content:"";position:absolute;left:-39px;top:34px;width:11px;height:11px;border-radius:50%;background:var(--bg-alt);border:2px solid var(--gold)}
+.role:first-child::before{background:var(--gold);box-shadow:0 0 0 6px var(--glow)}
+.role-date{color:var(--gold);font-size:.88rem;font-weight:600;letter-spacing:.01em;position:absolute;right:32px;top:30px}
+.role h3{font-size:1.28rem;line-height:1.25;letter-spacing:-.03em;margin:0 120px 4px 0;max-width:24em}
+.role-org{color:var(--muted);font-weight:500;font-size:.97rem;margin-bottom:12px}
+.role p:last-child{color:var(--muted);margin:0;font-size:1rem;line-height:1.65}
+.role > div{display:block}
+
+/* Skills */
+.skills{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border:1px solid var(--line-strong);border-radius:26px;background:var(--panel);overflow:hidden}
+.skills > div{padding:34px 32px 30px}
+.skills > div + div{border-left:1px solid var(--line)}
+.skills h3{font-size:1.18rem;letter-spacing:-.025em;margin-bottom:18px;color:var(--text)}
+.skills li{position:relative;padding:8px 0 8px 22px;color:var(--muted);font-size:1rem;line-height:1.45}
+.skills li::before{content:"";position:absolute;left:0;top:1.02em;width:9px;height:1px;background:var(--gold)}
+
+/* Contact */
+.contact-panel{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(32px,6vw,88px);padding:clamp(32px,5vw,64px);border-radius:32px;border:1px solid var(--line-strong);background:linear-gradient(145deg,var(--panel),color-mix(in srgb,var(--panel) 92%,var(--gold)));position:relative;overflow:hidden}
+.contact-panel .section-head{margin:0}
+.contact-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.contact-list{align-self:center;border-top:1px solid var(--line-strong)}
+.contact-row{display:grid;grid-template-columns:100px minmax(0,1fr);gap:18px;padding:18px 0;border-bottom:1px solid var(--line);align-items:baseline}
+.contact-row dt{color:var(--muted);font-size:.93rem}
+.contact-row dd{font-weight:500;overflow-wrap:anywhere}
+
+.site-footer{border-top:1px solid var(--line)}
+
+@media (max-width:900px){
+  .hero-grid{grid-template-columns:1fr;gap:64px}
+  .portrait-wrap{width:100%;max-width:380px}
+  .contact-panel{grid-template-columns:1fr}
+  .prose{grid-template-columns:1fr}
+  .strengths{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .strengths .ico{margin-bottom:36px}
+  .skills{grid-template-columns:1fr}
+  .skills > div + div{border-left:0;border-top:1px solid var(--line)}
 }
-html.dark .contact-request-btn:hover{
-  background:#317b89;
-  border-color:#8bd4dd;
-  color:#ffffff
+@media (max-width:600px){
+  .hero-facts{grid-template-columns:1fr;gap:16px}
+  .portrait-wrap::before{display:none}
+  .roles{padding-left:30px}
+  .roles::before{left:6px}
+  .role{padding:24px 22px}
+  .role::before{left:-30px;top:30px}
+  .role-date{position:static;order:-1;margin-bottom:2px}
+  .role{flex-direction:column}
+  .role h3{margin-right:0}
+  .contact-row{grid-template-columns:1fr;gap:2px}
+  .strengths{grid-template-columns:1fr}
+  .strengths li{padding:26px 24px}
+  .strengths .ico{margin-bottom:22px}
 }
 </style>
 </head>
+
 <body>
-<header class="topbar">
- <div class="wrap nav">
-  <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false" id="menuToggle">☰</button>
-  <nav class="navlinks" id="navLinks" aria-label="Main navigation">
-   <a href="#home">Home</a><a href="#about">About</a><a href="#experience">Experience</a><a href="#work">Core Skills</a><a href="#resume">Résumé</a><a href="#contact">Contact</a><button class="theme-toggle" type="button" id="themeToggle" aria-label="Switch to dark mode" aria-pressed="false">◐ <span>Dark mode</span></button><a class="nav-cta" href="#contact">Let's Connect ↗</a>
-  </nav>
- </div>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="#top">Mit Patel</a>
+
+    <nav class="nav-links" id="navLinks" aria-label="Main">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+      <button class="btn btn-primary btn-sm nav-cta-mobile" type="button" data-request="resume" hidden>Request résumé</button>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="btn btn-primary btn-sm nav-cta" type="button" data-request="resume">Request résumé</button>
+      <button class="icon-btn theme-btn" type="button" id="themeBtn" aria-label="Switch to dark mode">
+        <svg class="sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        <svg class="moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      </button>
+      <button class="icon-btn menu-btn" type="button" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
 </header>
-<main>
-<section class="hero" id="home">
- <div class="wrap">
-  <div class="hero-grid">
-   <div class="reveal">
-    <p class="hero-name">Mit Patel</p><p class="eyebrow">Financial Services&nbsp; · &nbsp;Business Operations&nbsp; · &nbsp;Process Improvement</p>
-    <h1><span class="hero-line">Turning customers</span><span class="hero-line">needs into</span><span class="hero-line hero-line-last">Practical Solutions</span></h1>
-    <p class="lead">I'm a financial services professional with experience in client engagement, sales, operations and process improvement. I bring a customer-first mindset, analytical thinking and a collaborative approach to help business run more efficiently and deliver better outcomes.</p>
-    <div class="hero-actions"><a class="btn btn-primary" href="#work">Explore my work <span>↗</span></a><a class="btn btn-secondary" href="#resume">Request résumé</a></div>
-   </div>
-   <div class="hero-visual reveal">
-    <img class="hero-photo" src="image.JPG" alt="Profile picture" loading="eager">
-   </div>
-  </div>
-  <div class="hero-statline reveal"><div><strong>7+ years</strong>Professional experience</div><div><strong>3+ sectors</strong>Customer, sales and operations</div><div><strong>One focus</strong>Practical improvement and Business Growth</div></div>
- </div>
-</section>
 
-<section class="section" id="about">
- <div class="wrap">
-  <div class="section-head reveal"><p class="eyebrow">About me</p><h2>How I approach work.</h2><p></p></div>
-  <div class="split">
-   <div class="sticky-copy reveal"><p class="body-copy">My experience across customer-facing, sales and operational environments has shaped a practical way of working: listen carefully, understand the details, and look for solutions that work for both people and the business.</p><p class="body-copy">In financial services, that means balancing helpful client conversations with accuracy, documentation and established requirements. In operations, it means understanding how information, systems and teams connect to keep work moving.</p><a class="btn btn-secondary" href="#experience">Explore my journey ↗</a></div>
-   <div class="reveal"><div class="principles">
-    <div class="principle"><strong>Customer focus</strong><span>Understand the need before recommending the next step.</span></div>
-    <div class="principle"><strong>Analytical mindset</strong><span>Use information and structured thinking to work through problems.</span></div>
-    <div class="principle"><strong>Operational thinking</strong><span>Look for practical ways to improve consistency and efficiency.</span></div>
-    <div class="principle"><strong>Collaborative approach</strong><span>Communicate clearly and coordinate across different priorities.</span></div>
-   </div></div>
-  </div>
- </div>
-</section>
+<main id="main">
 
-<section class="section section-soft" id="experience">
- <div class="wrap">
-  <div class="section-head reveal"><p class="eyebrow">Professional experience</p><h2>A career built across connected disciplines.</h2><p>Each role has added a different perspective—from customer conversations to planning and operational execution.</p></div>
-  <div class="split">
-   <div class="sticky-copy reveal"><h3 style="font-size:1.45rem;letter-spacing:-.035em;margin-top:0">One common thread: Client satisfaction and maintain high standards of service.</h3><p class="body-copy">My background is diverse by industry, but consistent in the skills it has developed: customer understanding, accurate execution, problem-solving and process awareness.</p><div class="career-band"><strong>Today</strong><br>Applying these strengths in financial services while continuing to build my capabilities in business systems and process improvement.</div></div>
-   <div class="timeline reveal">
-    <article class="timeline-item"><div class="timeline-top"><div><h3>Financial Services Representative II</h3><div class="org">CIBC · TB Outbound</div></div><span class="date">Jun 2024 – Present</span></div><p>Support client engagement through needs-based conversations, discuss appropriate financial solutions, and help move applications through accurate, policy-aligned processes. Recognized for strong performance in sales and customer service, with an ongoing interest in improving workflows and client experience.</p><div class="tag-row"><span class="tag">Client engagement</span><span class="tag">Consultative sales</span><span class="tag">Compliance & accuracy</span><span class="tag">Process improvement</span></div></article>
-    <article class="timeline-item"><div class="timeline-top"><div><h3>Customer Advisor</h3><div class="org">HGS Canada · Rogers together with Shaw</div></div><span class="date">May 2023 – Sep 2023</span></div><p>Built a foundation in contact-centre customer service by handling account questions, billing concerns, service changes and troubleshooting. Learned to navigate multiple systems, clarify customer needs and work toward timely resolutions.</p><div class="tag-row"><span class="tag">Customer service</span><span class="tag">Issue resolution</span><span class="tag">Retention</span></div></article>
-    <article class="timeline-item"><div class="timeline-top"><div><h3>Material Planner</h3><div class="org">Brandt Group of Companies</div></div><span class="date">Jan 2022 – May 2023</span></div><p>Coordinated planning and scheduling with purchasing, vendors, sales and shop management. This role strengthened my understanding of inventory, production priorities, supplier communication and the importance of reliable information across a workflow.</p><div class="tag-row"><span class="tag">Planning</span><span class="tag">Inventory</span><span class="tag">Cross-functional coordination</span></div></article>
-    <article class="timeline-item"><div class="timeline-top"><div><h3>Kitting Technician</h3><div class="org">Brandt Group of Companies</div></div><span class="date">Jun 2021 – Jan 2022</span></div><p>Supported shipping, receiving, inventory tracking and order fulfilment while monitoring progress and helping resolve delivery or carrier issues.</p></article>
-    <article class="timeline-item"><div class="timeline-top"><div><h3>Customer Availability Process-2 Associate</h3><div class="org">Walmart Canada</div></div><span class="date">Nov 2019 – Aug 2021</span></div><p>Helped customers locate products and resolve questions while replenishing merchandise and supporting product availability and store operations.</p></article>
-   </div>
-  </div>
- </div>
-</section>
-
-<section class="section" id="work">
- <div class="wrap">
-  <div class="work-intro reveal"><div><p class="eyebrow">Core skills</p><h2>Real challenges. Practical thinking.</h2></div><p class="body-copy"></p></div>
-  <div class="filters reveal" role="group" aria-label="Filter selected work">
-   <button class="filter active" data-filter="all">All</button><button class="filter" data-filter="finance">Financial services</button><button class="filter" data-filter="telecom">Telecommunications</button><button class="filter" data-filter="operations">Operations</button><button class="filter" data-filter="improvement">Process improvement</button>
-  </div>
-  <div class="work-grid">
-   <article class="work-card reveal" data-category="finance improvement"><img class="work-img" src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=900&q=85" alt="Professionals discussing information around a table" loading="lazy"><div class="work-content"><span class="work-kicker">Financial services · CIBC</span><h3>Building consistency in client engagement</h3><p>Why listening, needs-based conversations, accurate applications and clear follow-up all matter to a dependable client experience.</p><a class="work-link" href="#case-finance">Explore the approach ↗</a></div></article>
-   <article class="work-card reveal" data-category="telecom"><img class="work-img" src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=900&q=80" alt="Customer and service professional having a conversation" loading="lazy"><div class="work-content"><span class="work-kicker">Telecommunications · HGS Canada</span><h3>Turning service issues into clear next steps</h3><p>How active listening, system navigation and careful account handling help resolve questions and support customer confidence.</p><a class="work-link" href="#case-telecom">Explore the approach ↗</a></div></article>
-   <article class="work-card reveal" data-category="operations improvement"><img class="work-img" src="https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=900&q=80" alt="Business professional reviewing analytics and planning information in an office" loading="lazy"><div class="work-content"><span class="work-kicker">Manufacturing · Brandt</span><h3>Connecting planning with operational execution</h3><p>How production priorities, inventory information, purchasing and supplier coordination work together to support delivery.</p><a class="work-link" href="#case-operations">Explore the approach ↗</a></div></article>
-   <article class="work-card reveal" data-category="improvement operations"><img class="work-img" src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=900&q=80" alt="Analytics dashboard on a computer screen" loading="lazy"><div class="work-content"><span class="work-kicker">Cross-functional</span><h3>Finding opportunities to simplify workflows</h3><p>A practical lens for spotting repetitive steps, reducing manual effort and improving consistency without losing sight of quality.</p><a class="work-link" href="#case-improvement">Explore the approach ↗</a></div></article>
-  </div>
- </div>
-</section>
-
-<section class="section section-soft" id="case-studies">
- <div class="wrap">
-  <div class="section-head reveal"><p class="eyebrow">My working principles</p><h2>Good customer service often starts with better questions.</h2><p></p></div>
-  <div class="cap-grid">
-   <article class="cap-card reveal" id="case-finance"><div class="icon">◎</div><h3>Client engagement</h3><p>Understand the customer's needs, communicate clearly, and make the next step easier to navigate.</p></article>
-   <article class="cap-card reveal" id="case-telecom"><div class="icon">↗</div><h3>Service resolution</h3><p>Listen, discover, use the available options, and explain the path to resolution in plain language.</p></article>
-   <article class="cap-card reveal" id="case-operations"><div class="icon">⌘</div><h3>Operational coordination</h3><p>Keep information, priorities and stakeholders aligned so tasks can move forward reliably.</p></article>
-   <article class="cap-card reveal" id="case-improvement"><div class="icon">⤴</div><h3>Continuous improvement</h3><p>Look for friction in a process and consider simple, sustainable ways to improve it.</p></article>
-  </div>
- </div>
-</section>
-
-<section class="section" id="approach">
- <div class="wrap">
-  <div class="approach-banner reveal"><div class="approach-text"><p class="eyebrow">A little more about my approach</p><h2>Thoughtful in the details. Practical about the outcome.</h2><p>I value clear communication, dependable execution and improvements that make a real difference to customers expectations and business operations.</p><a href="#contact" class="btn btn-primary">Let's connect ↗</a></div><img class="approach-img" src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=1000&q=85" alt="Business professional speaking with a client in an office" loading="lazy"></div>
- </div>
-</section>
-
-<section class="section section-soft" id="resume">
- <div class="wrap resume-layout">
-  <div class="reveal"><p class="eyebrow">Get my résumé</p><h2 style="font-size:clamp(2.3rem,4vw,3.6rem)">Request my résumé.</h2><p class="body-copy">If you'd like a more detailed view of my experience, education and professional background, you're welcome to request the latest copy.</p><div class="resume-points"><div class="resume-point"><span>✓</span><span>Current professional background</span></div><div class="resume-point"><span>↗</span><span>Experience, education and relevant skills</span></div><div class="resume-point"><span>✉</span><span>Shared directly upon request</span></div></div></div>
-  <div class="form-card reveal">
-   <h3>Request résumé</h3><p></p>
-   <button class="btn btn-primary" type="button" data-open-request="resume">Request my résumé ↗</button>
-   <p class="form-hint"></p>
-  </div>
- </div>
-</section>
-
-<section id="contact">
- <div class="contact-hero"><div class="wrap contact-hero-grid">
-  <div class="reveal"><p class="eyebrow" style="color:#9bc9f7">Let's connect</p><h2 style="font-size:clamp(2.5rem,5vw,4.3rem);letter-spacing:-.06em;line-height:1.05;margin:0">Let's build something meaningful together.</h2><p>I'm always open to thoughtful professional conversations, relevant opportunities and connections across financial services, business operations and process improvement.</p></div>
-  <div class="contact-info reveal"><div class="contact-row"><div class="small-icon">✉</div><div><small>Email</small><strong><a href="mailto:connect@patelmit.com">connect@patelmit.com</a></strong></div></div><div class="contact-row"><div class="small-icon">☎</div><div><small>Phone</small><button class="btn btn-secondary contact-request-btn" type="button" data-open-request="phone">Request phone number ↗</button></div></div><div class="contact-row"><div class="small-icon">⌖</div><div><small>Location</small><strong>Regina, Saskatchewan, Canada</strong></div></div><div class="contact-row"><div class="small-icon">in</div><div><small>LinkedIn</small><strong><a href="https://www.linkedin.com/in/mitp-patel" target="_blank" rel="noopener noreferrer">linkedin.com/in/mitp-patel ↗</a></strong></div></div></div>
- </div></div>
-</section>
-
-<!-- Request forms -->
-<div class="request-modal" id="resumeModal" role="dialog" aria-modal="true" aria-labelledby="resumeModalTitle">
-  <div class="request-dialog" id="resumeDialog">
-    <button class="request-close" type="button" data-close-request aria-label="Close">×</button>
-    <div class="request-form">
-      <h3 id="resumeModalTitle">Request Mit Patel's résumé</h3>
-      <p>Please provide your name, email, company details and purpose for the request.</p>
-      <form action="https://formspree.io/f/mjykndaz" method="POST" data-request-form="resume">
-        <input type="hidden" name="request_type" value="Résumé request">
-        <div class="field"><label for="resume_name">Name *</label><input id="resume_name" name="name" autocomplete="name" required placeholder="Full name"></div>
-        <div class="field"><label for="resume_email">Email address *</label><input id="resume_email" name="email" type="email" autocomplete="email" required placeholder="you@company.com"></div>
-        <div class="field"><label for="resume_company">Company details</label><input id="resume_company" name="company_details" placeholder="Company name, role or relevant details"></div>
-        <div class="field"><label for="resume_purpose">Purpose for request</label><textarea id="resume_purpose" name="purpose" placeholder="Please tell me why you are requesting my résumé."></textarea></div>
-        <button class="btn btn-primary" type="submit" data-original-text="Submit résumé request ↗">Submit résumé request ↗</button>
-        <p class="request-type-note">Name and email are required. Your information is sent to Mit Patel through Formspree.</p>
-      </form>
+  <!-- Hero -->
+  <section class="hero" id="top">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="hero-role">Financial services professional</p>
+        <h1>Mit Patel</h1>
+        <p class="hero-summary">I work in client engagement, sales and operations, with a focus on clear communication, accurate work and practical improvements to how things get done</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#experience">View experience</a>
+          <a class="btn btn-secondary" href="https://www.linkedin.com/in/mitp-patel" target="_blank" rel="noopener noreferrer">LinkedIn profile</a>
+        </div>
+        <dl class="hero-facts">
+          <div><dt>Current role</dt><dd>Financial Services Representative II, CIBC</dd></div>
+          <div><dt>Location</dt><dd>Regina, Saskatchewan</dd></div>
+        </dl>
+      </div>
+      <div class="portrait-wrap">
+        <figure class="portrait" data-initials="MP">
+          <img src="image.JPG" alt="Portrait of Mit Patel" width="640" height="800" onerror="this.parentElement.classList.add('no-photo');this.remove();">
+        </figure>
+      </div>
     </div>
-    <div class="request-success" aria-live="polite">
-      <div class="success-icon">✓</div>
-      <h3>Request submitted</h3>
-      <p>Your request has been submitted and Mit Patel will reach out to you soon.</p>
-      <button class="btn btn-secondary" type="button" data-close-request style="margin-top:20px">Close</button>
-    </div>
-  </div>
-</div>
+  </section>
 
-<div class="request-modal" id="phoneModal" role="dialog" aria-modal="true" aria-labelledby="phoneModalTitle">
-  <div class="request-dialog" id="phoneDialog">
-    <button class="request-close" type="button" data-close-request aria-label="Close">×</button>
-    <div class="request-form">
-      <h3 id="phoneModalTitle">Request Mit Patel's phone number</h3>
-      <p>Please provide your name, email, company details and purpose for the request.</p>
-      <form action="https://formspree.io/f/mjykndaz" method="POST" data-request-form="phone">
-        <input type="hidden" name="request_type" value="Phone number request">
-        <div class="field"><label for="phone_name">Name *</label><input id="phone_name" name="name" autocomplete="name" required placeholder="Full name"></div>
-        <div class="field"><label for="phone_email">Email address *</label><input id="phone_email" name="email" type="email" autocomplete="email" required placeholder="you@company.com"></div>
-        <div class="field"><label for="phone_company">Company details</label><input id="phone_company" name="company_details" placeholder="Company name, role or relevant details"></div>
-        <div class="field"><label for="phone_purpose">Purpose for request</label><textarea id="phone_purpose" name="purpose" placeholder="Please tell me why you are requesting my phone number."></textarea></div>
-        <button class="btn btn-primary" type="submit" data-original-text="Submit phone request ↗">Submit phone request ↗</button>
-        <p class="request-type-note">Name and email are required. My phone number is never displayed publicly on this website.</p>
-      </form>
+  <!-- About -->
+  <section class="section alt" id="about">
+    <div class="wrap">
+      <div class="section-head"><h2>About me</h2></div>
+      <div class="about-grid">
+        <div class="prose">
+          <p>I have worked in customer-facing, sales and operational roles, and my approach is similar in each: listen carefully, understand the details, and find a solution that aligns with clients needs while maintaining high standards of service.</p>
+          <p>In financial services, that means having helpful, needs-based conversations while staying accurate and aligned with documentation and policy requirements. In operations, it means understanding how information, systems and teams connect so work keeps moving.</p>
+          <p>I am currently building on this foundation by developing my knowledge of business systems and process improvement.</p>
+        </div>
+        <ul class="strengths">
+          <li><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg></span><strong>Client focus</strong><span>Understand the need before recommending a next step.</span></li>
+          <li><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 20h16M7 20v-6M12 20V8M17 20v-9"/></svg></span><strong>Analytical thinking</strong><span>Use information and structure to work through problems.</span></li>
+          <li><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="6" height="6" rx="1"/><rect x="14" y="14" width="6" height="6" rx="1"/><path d="M10 7h4a2 2 0 0 1 2 2v5"/></svg></span><strong>Operational awareness</strong><span>Look for practical ways to improve consistency and efficiency.</span></li>
+          <li><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3 20v-1a5 5 0 0 1 5-5h2a5 5 0 0 1 5 5v1"/><circle cx="17" cy="9" r="2.5"/><path d="M17 14a4 4 0 0 1 4 4v1"/></svg></span><strong>Collaboration</strong><span>Communicate clearly and coordinate across competing priorities.</span></li>
+        </ul>
+      </div>
     </div>
-    <div class="request-success" aria-live="polite">
-      <div class="success-icon">✓</div>
-      <h3>Request submitted</h3>
-      <p>Your request has been submitted and Mit Patel will reach out to you soon.</p>
-      <button class="btn btn-secondary" type="button" data-close-request style="margin-top:20px">Close</button>
-    </div>
-  </div>
-</div>
+  </section>
 
+  <!-- Experience -->
+  <section class="section" id="experience">
+    <div class="wrap">
+      <div class="section-head"><h2>Experience</h2></div>
+      <div class="roles">
+        <article class="role">
+          <div class="role-date">Jun 2024 – Present</div>
+          <div>
+            <h3>Financial Services Representative II</h3>
+            <p class="role-org">CIBC, TB Outbound</p>
+            <p>Hold needs-based conversations with clients, discuss suitable financial solutions, and take applications through accurate, policy-aligned processes. Look for ways to improve workflows and the client experience.</p>
+          </div>
+        </article>
+        <article class="role">
+          <div class="role-date">May 2023 – Sep 2023</div>
+          <div>
+            <h3>Customer Advisor</h3>
+            <p class="role-org">HGS Canada, for Rogers and Shaw</p>
+            <p>Handled account questions, billing concerns, service changes and troubleshooting in a contact-centre setting. Worked across multiple systems to clarify customer needs and reach timely resolutions.</p>
+          </div>
+        </article>
+        <article class="role">
+          <div class="role-date">Jan 2022 – May 2023</div>
+          <div>
+            <h3>Material Planner</h3>
+            <p class="role-org">Brandt Group of Companies</p>
+            <p>Coordinated planning and scheduling with purchasing, vendors, sales and shop management, working with inventory, production priorities and supplier communication.</p>
+          </div>
+        </article>
+        <article class="role">
+          <div class="role-date">Jun 2021 – Jan 2022</div>
+          <div>
+            <h3>Kitting Technician</h3>
+            <p class="role-org">Brandt Group of Companies</p>
+            <p>Supported shipping, receiving, inventory tracking and order fulfilment, and helped resolve delivery and carrier issues.</p>
+          </div>
+        </article>
+        <article class="role">
+          <div class="role-date">Nov 2019 – Aug 2021</div>
+          <div>
+            <h3>Customer Availability Process-2 Associate</h3>
+            <p class="role-org">Walmart Canada</p>
+            <p>Helped customers find products and answered their questions, while replenishing merchandise to keep products available.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="section alt" id="skills">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Skills</h2>
+        <p class="section-lead">Capabilities developed across each of my roles.</p>
+      </div>
+      <div class="skills">
+        <div>
+          <h3>Client and sales</h3>
+          <ul>
+            <li>Needs-based conversations</li>
+            <li>Consultative sales</li>
+            <li>Application processing</li>
+            <li>Policy and compliance awareness</li>
+            <li>Client follow-up</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Service and resolution</h3>
+          <ul>
+            <li>Account and billing support</li>
+            <li>Troubleshooting</li>
+            <li>Service issue resolution</li>
+            <li>Customer retention</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Operations and planning</h3>
+          <ul>
+            <li>Planning and scheduling</li>
+            <li>Inventory management</li>
+            <li>Supplier and vendor communication</li>
+            <li>Cross-functional coordination</li>
+            <li>Process improvement</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section" id="contact">
+    <div class="wrap">
+      <div class="contact-panel">
+        <div class="section-head">
+          <h2>Contact</h2>
+          <p class="section-lead">Happy to connect about roles and conversations in financial services, business operations and process improvement.</p>
+          <div class="contact-actions">
+          <a class="btn btn-primary" href="mailto:connect@patelmit.com">Send an email</a>
+          <button class="btn btn-secondary" type="button" data-request="resume">Request résumé</button>
+        </div>
+        </div>
+        <dl class="contact-list">
+        <div class="contact-row"><dt>Email</dt><dd><a href="mailto:connect@patelmit.com">connect@patelmit.com</a></dd></div>
+        <div class="contact-row"><dt>LinkedIn</dt><dd><a href="https://www.linkedin.com/in/mitp-patel" target="_blank" rel="noopener noreferrer">linkedin.com/in/mitp-patel</a></dd></div>
+        <div class="contact-row"><dt>Phone</dt><dd><button class="text-btn" type="button" data-request="phone">Request by form</button></dd></div>
+        <div class="contact-row"><dt>Location</dt><dd>Regina, Saskatchewan, Canada</dd></div>
+      </dl>
+      </div>
+    </div>
+  </section>
 </main>
-<footer class="footer"><div class="wrap"><div class="footer-top"><a class="brand" href="#home">Mit Patel<small>Financial Services · Operations · Process Improvement</small></a><nav class="footer-links" aria-label="Footer navigation"><a href="#about">About</a><a href="#experience">Experience</a><a href="#work">Core Skills</a><a href="#resume">Request résumé</a><a href="#contact">Contact</a></nav></div><div class="copyright"><span>© <span id="year"></span> Mit Patel. All rights reserved.</span><span>Better processes. Clearer experiences. Dependable outcomes.</span></div></div></footer>
+
+<footer class="site-footer">
+  <div class="wrap footer-row">
+    <span>© <span id="year">2026</span> Mit Patel</span>
+    <a class="back" href="#top">Back to top</a>
+  </div>
+</footer>
+
+<!-- Request dialog (résumé and phone number) -->
+<dialog class="request" id="requestDialog" aria-labelledby="requestTitle">
+  <div class="request-inner">
+    <button class="close-btn" type="button" data-close aria-label="Close">×</button>
+
+    <div class="request-form">
+      <h3 id="requestTitle">Request résumé</h3>
+      <p class="intro" id="requestIntro">Share a few details and I will send it to you directly.</p>
+
+      <form id="requestForm" action="https://formspree.io/f/mjykndaz" method="POST">
+        <input type="hidden" name="request_type" id="requestType" value="Résumé request">
+        <input type="hidden" name="_subject" id="requestSubject" value="Résumé request from portfolio website">
+        <div class="hp" aria-hidden="true"><label>Leave this field empty<input type="text" name="_gotcha" tabindex="-1" autocomplete="off"></label></div>
+
+        <div class="field"><label for="f_name">Name</label><input id="f_name" name="name" type="text" autocomplete="name" required></div>
+        <div class="field"><label for="f_email">Email address</label><input id="f_email" name="email" type="email" autocomplete="email" required></div>
+        <div class="field"><label for="f_company">Company or role <span class="opt">(optional)</span></label><input id="f_company" name="company_details" type="text" autocomplete="organization"></div>
+        <div class="field"><label for="f_purpose">Reason for the request <span class="opt">(optional)</span></label><textarea id="f_purpose" name="purpose"></textarea></div>
+
+        <button class="btn btn-primary" type="submit" id="submitBtn">Send request</button>
+        <p class="form-note" id="requestNote">Your details are sent to me through Formspree and used only to respond.</p>
+      </form>
+    </div>
+
+    <div class="success" aria-live="polite">
+      <h3>Request sent</h3>
+      <p>Thank you. I will be in touch soon.</p>
+      <button class="btn btn-secondary" type="button" data-close>Close</button>
+    </div>
+  </div>
+</dialog>
+
 <script>
-const menuToggle=document.getElementById('menuToggle'),navLinks=document.getElementById('navLinks');
-menuToggle.addEventListener('click',()=>{const open=navLinks.classList.toggle('open');menuToggle.setAttribute('aria-expanded',String(open));menuToggle.textContent=open?'×':'☰'});
-navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{navLinks.classList.remove('open');menuToggle.setAttribute('aria-expanded','false');menuToggle.textContent='☰'}));
-document.getElementById('year').textContent=new Date().getFullYear();
-const revealObserver=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');revealObserver.unobserve(entry.target)}}),{threshold:.12});
-document.querySelectorAll('.reveal').forEach(el=>revealObserver.observe(el));
-document.querySelectorAll('.filter').forEach(button=>button.addEventListener('click',()=>{document.querySelectorAll('.filter').forEach(b=>b.classList.remove('active'));button.classList.add('active');const filter=button.dataset.filter;document.querySelectorAll('.work-card').forEach(card=>{const cats=card.dataset.category.split(' ');card.classList.toggle('hide',filter!=='all'&&!cats.includes(filter))})}));
-/* Request forms: the previous version referenced an old contact form that no longer exists.
-   That JavaScript error stopped all code below it, including the theme switcher. */
-document.querySelectorAll('form[data-request-form]').forEach(form=>{
-  form.addEventListener('submit',async event=>{
-    event.preventDefault();
-    if(!form.reportValidity()) return;
+(function () {
+  var root = document.documentElement;
 
-    const dialog=form.closest('.request-dialog');
-    const submitButton=form.querySelector('button[type="submit"]');
-    const originalText=submitButton.textContent;
-    submitButton.disabled=true;
-    submitButton.textContent='Submitting…';
+  document.getElementById('year').textContent = new Date().getFullYear();
 
-    try{
-      const response=await fetch(form.action,{
-        method:'POST',
-        body:new FormData(form),
-        headers:{'Accept':'application/json'}
+  /* Theme toggle */
+  var themeBtn = document.getElementById('themeBtn');
+  function syncThemeLabel() {
+    var dark = root.getAttribute('data-theme') === 'dark';
+    themeBtn.setAttribute('aria-label', dark ? 'Switch to light mode' : 'Switch to dark mode');
+    var meta = document.querySelector('meta[name="theme-color"]');
+    if (meta) meta.setAttribute('content', meta.getAttribute(dark ? 'data-dark' : 'data-light'));
+  }
+  syncThemeLabel();
+  themeBtn.addEventListener('click', function () {
+    var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    try { localStorage.setItem('theme', next); } catch (e) {}
+    syncThemeLabel();
+  });
+
+  /* Mobile menu */
+  var menuBtn = document.getElementById('menuBtn');
+  var navLinks = document.getElementById('navLinks');
+  var mobileCta = navLinks.querySelector('.nav-cta-mobile');
+  var mq = window.matchMedia('(max-width: 760px)');
+  function setMenu(open) {
+    navLinks.classList.toggle('open', open);
+    menuBtn.setAttribute('aria-expanded', String(open));
+    menuBtn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+  }
+  function syncMobileCta() { mobileCta.hidden = !mq.matches; if (!mq.matches) setMenu(false); }
+  syncMobileCta();
+  (mq.addEventListener ? mq.addEventListener('change', syncMobileCta) : mq.addListener(syncMobileCta));
+  menuBtn.addEventListener('click', function () { setMenu(!navLinks.classList.contains('open')); });
+  navLinks.querySelectorAll('a').forEach(function (a) { a.addEventListener('click', function () { setMenu(false); }); });
+
+  /* Highlight current section in the nav */
+  var navAnchors = Array.prototype.slice.call(navLinks.querySelectorAll('a[href^="#"]'));
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        navAnchors.forEach(function (a) {
+          if (a.getAttribute('href') === '#' + entry.target.id) a.setAttribute('aria-current', 'true');
+          else a.removeAttribute('aria-current');
+        });
       });
-
-      if(!response.ok) throw new Error('Formspree submission failed');
-
-      dialog.classList.add('submitted');
-      form.reset();
-    }catch(error){
-      submitButton.disabled=false;
-      submitButton.textContent=originalText;
-      let status=form.querySelector('.request-error');
-      if(!status){
-        status=document.createElement('p');
-        status.className='request-error';
-        status.style.cssText='margin-top:14px;padding:12px;border-radius:12px;background:#fff0f0;color:#9b2c2c;font-size:.84rem;';
-        form.appendChild(status);
-      }
-      status.textContent='The request could not be submitted. Please check your internet connection and try again.';
-    }
-  });
-});
-
-document.querySelectorAll('[data-open-request]').forEach(button=>{
-  button.addEventListener('click',()=>{
-    const type=button.dataset.openRequest;
-    const modal=document.getElementById(type==='resume'?'resumeModal':'phoneModal');
-    if(modal){
-      modal.classList.add('open');
-      document.body.style.overflow='hidden';
-      const firstInput=modal.querySelector('input:not([type="hidden"])');
-      if(firstInput) setTimeout(()=>firstInput.focus(),50);
-    }
-  });
-});
-
-document.querySelectorAll('[data-close-request]').forEach(button=>{
-  button.addEventListener('click',()=>{
-    const modal=button.closest('.request-modal');
-    if(modal){
-      modal.classList.remove('open');
-      document.body.style.overflow='';
-      const dialog=modal.querySelector('.request-dialog');
-      if(dialog) dialog.classList.remove('submitted');
-      const form=modal.querySelector('form');
-      if(form){
-        const submitButton=form.querySelector('button[type="submit"]');
-        if(submitButton){
-          submitButton.disabled=false;
-          submitButton.textContent=submitButton.dataset.originalText || (
-            form.dataset.requestForm==='resume' ? 'Submit résumé request ↗' : 'Submit phone request ↗'
-          );
-        }
-      }
-    }
-  });
-});
-
-document.querySelectorAll('.request-modal').forEach(modal=>{
-  modal.addEventListener('click',event=>{
-    if(event.target===modal){
-      modal.classList.remove('open');
-      document.body.style.overflow='';
-    }
-  });
-});
-
-document.addEventListener('keydown',event=>{
-  if(event.key==='Escape'){
-    document.querySelectorAll('.request-modal.open').forEach(modal=>{
-      modal.classList.remove('open');
-      document.body.style.overflow='';
+    }, { rootMargin: '-45% 0px -50% 0px' });
+    ['about', 'experience', 'skills', 'contact'].forEach(function (id) {
+      var el = document.getElementById(id); if (el) io.observe(el);
     });
   }
-});
 
-const themeToggle=document.getElementById('themeToggle');
-const savedTheme=localStorage.getItem('portfolio-theme');
-// Dark mode is the default. Only an explicit saved "light" preference uses light mode.
-if(savedTheme === 'light'){
-  document.documentElement.classList.remove('dark');
-}else{
-  document.documentElement.classList.add('dark');
-}
-function updateThemeButton(){
-  const dark=document.documentElement.classList.contains('dark');
-  themeToggle.innerHTML=dark?'☀ <span>Light mode</span>':'◐ <span>Dark mode</span>';
-  themeToggle.setAttribute('aria-label',dark?'Switch to light mode':'Switch to dark mode');
-  themeToggle.setAttribute('aria-pressed',String(dark));
-}
-updateThemeButton();
-themeToggle.addEventListener('click',()=>{
-  const dark=document.documentElement.classList.toggle('dark');
-  localStorage.setItem('portfolio-theme',dark?'dark':'light');
-  updateThemeButton();
-});
+  /* Request dialog */
+  var dialog = document.getElementById('requestDialog');
+  var form = document.getElementById('requestForm');
+  var submitBtn = document.getElementById('submitBtn');
+  var types = {
+    resume: {
+      title: 'Request résumé',
+      intro: 'Share a few details and I will send it to you directly.',
+      type: 'Résumé request',
+      subject: 'Résumé request from portfolio website',
+      button: 'Send request',
+      note: 'Your details are sent to me through Formspree and used only to respond.'
+    },
+    phone: {
+      title: 'Request phone number',
+      intro: 'My number is not listed publicly. Share a few details and I will reply with it.',
+      type: 'Phone number request',
+      subject: 'Phone number request from portfolio website',
+      button: 'Send request',
+      note: 'Your details are sent to me through Formspree and used only to respond.'
+    }
+  };
+  var lastTrigger = null;
+
+  function openDialog(kind, trigger) {
+    var cfg = types[kind] || types.resume;
+    lastTrigger = trigger || null;
+    document.getElementById('requestTitle').textContent = cfg.title;
+    document.getElementById('requestIntro').textContent = cfg.intro;
+    document.getElementById('requestType').value = cfg.type;
+    document.getElementById('requestSubject').value = cfg.subject;
+    document.getElementById('requestNote').textContent = cfg.note;
+    submitBtn.textContent = cfg.button;
+    submitBtn.disabled = false;
+    dialog.classList.remove('sent');
+    var err = form.querySelector('.form-error'); if (err) err.remove();
+    if (typeof dialog.showModal === 'function') dialog.showModal();
+    else dialog.setAttribute('open', '');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeDialog() {
+    if (typeof dialog.close === 'function') dialog.close(); else dialog.removeAttribute('open');
+  }
+  dialog.addEventListener('close', function () {
+    document.body.style.overflow = '';
+    if (dialog.classList.contains('sent')) form.reset();
+    if (lastTrigger) lastTrigger.focus();
+  });
+
+  document.querySelectorAll('[data-request]').forEach(function (btn) {
+    btn.addEventListener('click', function () { setMenu(false); openDialog(btn.getAttribute('data-request'), btn); });
+  });
+  dialog.querySelectorAll('[data-close]').forEach(function (btn) { btn.addEventListener('click', closeDialog); });
+  dialog.addEventListener('click', function (e) { if (e.target === dialog) closeDialog(); });
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    if (!form.reportValidity()) return;
+    var label = submitBtn.textContent;
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Sending…';
+    var old = form.querySelector('.form-error'); if (old) old.remove();
+
+    fetch(form.action, { method: 'POST', body: new FormData(form), headers: { 'Accept': 'application/json' } })
+      .then(function (res) {
+        if (!res.ok) throw new Error('Request failed');
+        dialog.classList.add('sent');
+      })
+      .catch(function () {
+        submitBtn.disabled = false;
+        submitBtn.textContent = label;
+        var p = document.createElement('p');
+        p.className = 'form-error';
+        p.setAttribute('role', 'alert');
+        p.textContent = 'The request was not sent. Check your connection and try again, or email connect@patelmit.com.';
+        form.appendChild(p);
+      });
+  });
+})();
 </script>
 </body>
 </html>
